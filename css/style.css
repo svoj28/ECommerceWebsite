@@ -1,13 +1,16 @@
 *{
 	font-family: Roboto, sans-serif;
-
 }
 html{
 	scroll-behavior: smooth;
 }
-
+section {
+	margin: 0;
+	padding: 0;
+	background-size: cover;
+	background-position: center center;
+}
 body {
-	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -271,16 +274,13 @@ header{
   .left_area span{
 	color: #19B3D3;
   }
-.hero {
-    background-color: #eee;
+  .hero {
+    background: linear-gradient(to bottom, #130963, #230650);
     text-align: center;
-    margin-top: 100px;
-    padding-bottom: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 5%;
-    margin-left: auto
+    margin: 0;
+    padding: 5% 0;
 }
+
 
 .hero h2 {
 	font-size: 3rem;
