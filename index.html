@@ -21,32 +21,43 @@
 		<div class="navigation">
 			<ul class="menu">
 			  <div class="close-btn"></div>
-			  <li class="menu-item"><a href="index.html">Home</a></li>
-			  <li class="menu-item"><a href="#">Artworks</a></li>
+			  <li class="menu-item"><a href= "#">Home</a></li>
+			  <li class="menu-item"><a href="#featured">Featured</a></li>
 			  <li class="menu-item">
-				<a class="sub-btn" href="#">Categories <i class="fas fa-angle-down"></i></a>
+				<a class="sub-btn">Categories <i class="fas fa-angle-down"></i></a>
 				<ul class="sub-menu">
 				  <li class="sub-item more">
-					<a class="more-btn" href="#">2D ARTS <i class="fas fa-angle-right"></i></a>
+					<a class="more-btn">2D ARTS <i class="fas fa-angle-right"></i></a>
 					<ul class="more-menu">
-					  <li class="more-item"><a href="#">GAME ASSETS</a></li>
-					  <li class="more-item"><a href="#">BACKGROUND</a></li>
+					  <li class="more-item"><a href="#characters">CHARACTER ARTWORKS</a></li>
+					  <li class="more-item"><a href="#nature">NATURE ARTWORKS</a></li>
+					  <li class="more-item"><a href="#weapon">WEAPON ARTWORKS</a></li>
+					  <li class="more-item"><a href="#furniture">FURNITURE ARTWORKS</a></li>
 					</ul>
 				  </li>
 				  <li class="sub-item more">
-					<a class="more-btn" href="#">3D ARTS <i class="fas fa-angle-right"></i></a>
+					<a class="more-btn">3D ARTS <i class="fas fa-angle-right"></i></a>
 					<ul class="more-menu">
-					  <li class="more-item"><a href="#">GAME ASSETS</a></li>
+					  <li class="more-item"><a href="#animals">ANIMAL ARTWORKS</a></li>
+					  <li class="more-item"><a href="#furniture3d">FURNITURE ARTWORKS</a></li>
+					  <li class="more-item"><a href="#vehicle">VEHICLE ARTWORKS</a></li>
+					  <li class="more-item"><a href="#equipment">EQUIPMENT ARTWORKS</a></li>
 					</ul>
 				  </li>
 				</ul>
 			  </li>
-			  <li class="menu-item"><a href="#">Cart</a></li>
 			  <li class="menu-item"><a href="#">Contacts</a></li>
+			  <li class="menu-item"><div class="row">
+										<div class="cart-btn">
+				  							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear Cart</button></div>
+			</div></li>
+			  
+				<input type="text" placeholder="Search..">
 			</ul>
 		  </div>
-	  </header>
+		</header>
 	  <!--Image Slideshow-->
+	  <section id="home">
 	  <section class="slideshow">
 		<div class="img-slider">
 
@@ -108,152 +119,8 @@
 			</div>
 		</div> 
 	</section>
-<section>
-	<h2 class="section-title">Hot Deals!</h2>
-	<div class="container">
-		<div class="product">
-		  <div class="product-card">
-			<h2 class="name">Title1</h2>
-			<span class="price">$120.00</span>
-			<a class="popup-btn">Quick View</a>
-			<img src="images/1.jpg" class="product-img" alt="">
-		  </div>
-		  <div class="popup-view">
-			<div class="popup-card">
-			  <a><i class="fas fa-times close-btn"></i></a>
-			  <div class="product-img">
-				<img src="images/1.jpg" alt="">
-			  </div>
-			  <div class="info">
-				<h2>Title1<br><span>Subtitle1</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<span class="price">$120.00</span>
-				<a href="#" class="add-cart-btn">Add to Cart</a>
-				<a href="#" class="add-wish">Add to Wishlist</a>
-			  </div>
-			</div>
-		  </div>
-		</div>
-		<div class="product">
-		  <div class="product-card">
-			<h2 class="name">Title2</h2>
-			<span class="price">$100.00</span>
-			<a class="popup-btn">Quick View</a>
-			<img src="images/1.jpg" class="product-img" alt="">
-		  </div>
-		  <div class="popup-view">
-			<div class="popup-card">
-			  <a><i class="fas fa-times close-btn"></i></a>
-			  <div class="product-img">
-				<img src="images/1.jpg" alt="">
-			  </div>
-			  <div class="info">
-				<h2>Title<br><span>Subtitle1</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<span class="price">$100.00</span>
-				<a href="#" class="add-cart-btn">Add to Cart</a>
-				<a href="#" class="add-wish">Add to Wishlist</a>
-			  </div>
-			</div>
-		  </div>
-		</div>
-		<div class="product">
-		  <div class="product-card">
-			<h2 class="name">Title3</h2>
-			<span class="price">$250.00</span>
-			<a class="popup-btn">Quick View</a>
-			<img src="images/1.jpg" class="product-img" alt="">
-		  </div>
-		  <div class="popup-view">
-			<div class="popup-card">
-			  <a><i class="fas fa-times close-btn"></i></a>
-			  <div class="product-img">
-				<img src="images/1.jpg" alt="">
-			  </div>
-			  <div class="info">
-				<h2>Title<br><span>Subtitle</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<span class="price">$250.00</span>
-				<a href="#" class="add-cart-btn">Add to Cart</a>
-				<a href="#" class="add-wish">Add to Wishlist</a>
-			  </div>
-			</div>
-		  </div>
-		</div>
-		<div class="product">
-			<div class="product-card">
-			  <h2 class="name">Title4</h2>
-			  <span class="price">$120.00</span>
-			  <a class="popup-btn">Quick View</a>
-			  <img src="images/1.jpg" class="product-img" alt="">
-			</div>
-			<div class="popup-view">
-			  <div class="popup-card">
-				<a><i class="fas fa-times close-btn"></i></a>
-				<div class="product-img">
-				  <img src="images/1.jpg" alt="">
-				</div>
-				<div class="info">
-				  <h2>Title<br><span>Subtitle</span></h2>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				  <span class="price">$120.00</span>
-				  <a href="#" class="add-cart-btn">Add to Cart</a>
-				  <a href="#" class="add-wish">Add to Wishlist</a>
-				</div>
-			  </div>
-			</div>
-		  </div>
-		  <div class="product">
-			<div class="product-card">
-			  <h2 class="name">Title5</h2>
-			  <span class="price">$100.00</span>
-			  <a class="popup-btn">Quick View</a>
-			  <img src="images/1.jpg" class="product-img" alt="">
-			</div>
-			<div class="popup-view">
-			  <div class="popup-card">
-				<a><i class="fas fa-times close-btn"></i></a>
-				<div class="product-img">
-				  <img src="images/1.jpg" alt="">
-				</div>
-				<div class="info">
-				  <h2>Title<br><span>Subtitle</span></h2>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				  <span class="price">$100.00</span>
-				  <a href="#" class="add-cart-btn">Add to Cart</a>
-				  <a href="#" class="add-wish">Add to Wishlist</a>
-				</div>
-			  </div>
-			</div>
-		  </div>
-		  <div class="product">
-			<div class="product-card">
-			  <h2 class="name">Title6</h2>
-			  <span class="price">$250.00</span>
-			  <a class="popup-btn">Quick View</a>
-			  <img src="images/1.jpg" class="product-img" alt="">
-			</div>
-			<div class="popup-view">
-			  <div class="popup-card">
-				<a><i class="fas fa-times close-btn"></i></a>
-				<div class="product-img">
-				  <img src="images/1.jpg" alt="">
-				</div>
-				<div class="info">
-				  <h2>Title<br><span>Subtitle</span></h2>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				  <span class="price">$250.00</span>
-				  <a href="#" class="add-cart-btn">Add to Cart</a>
-				  <a href="#" class="add-wish">Add to Wishlist</a>
-				</div>
-			  </div>
-			</div>
-		  </div>
-	  </div>
-	  
-</section>	
 
-<section>
+<section  id="featured" style="background: linear-gradient(to bottom, #0fa30f, lightgreen);">
 	<h2 class="section-title">Featured Artworks</h2>
 	<div class="container">
 		<div class="product">
@@ -273,8 +140,8 @@
 				<h2>Title1<br><span>Subtitle1</span></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<span class="price">$120.00</span>
-				<a href="#" class="add-cart-btn">Add to Cart</a>
-				<a href="#" class="add-wish">Add to Wishlist</a>
+				<a href="#" data-name="Banana" data-price="1.22" class="add-to-cart btn btn-primary">Add to cart</a>
+
 			  </div>
 			</div>
 		  </div>
@@ -296,8 +163,9 @@
 				<h2>Title<br><span>Subtitle1</span></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<span class="price">$100.00</span>
-				<a href="#" class="add-cart-btn">Add to Cart</a>
-				<a href="#" class="add-wish">Add to Wishlist</a>
+				<button class="add-cart-btn">Add to Cart</button>
+
+
 			  </div>
 			</div>
 		  </div>
@@ -319,8 +187,9 @@
 				<h2>Title<br><span>Subtitle</span></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<span class="price">$250.00</span>
-				<a href="#" class="add-cart-btn">Add to Cart</a>
-				<a href="#" class="add-wish">Add to Wishlist</a>
+				<button class="add-cart-btn">Add to Cart</button>
+
+
 			  </div>
 			</div>
 		  </div>
@@ -342,7 +211,304 @@
 				  <h2>Title<br><span>Subtitle</span></h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				  <span class="price">$120.00</span>
-				  <a href="#" class="add-cart-btn">Add to Cart</a>
+				  <button class="add-cart-btn">Add to Cart</button>
+
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="product">
+			<div class="product-card">
+			  <h2 class="name">Title5</h2>
+			  <span class="price">$100.00</span>
+			  <a class="popup-btn">Quick View</a>
+			  <img src="images/1.jpg" class="product-img" alt="">
+			</div>
+			<div class="popup-view">
+			  <div class="popup-card">
+				<a><i class="fas fa-times close-btn"></i></a>
+				<div class="product-img">
+				  <img src="images/1.jpg" alt="">
+				</div>
+				<div class="info">
+				  <h2>Title<br><span>Subtitle</span></h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				  <span class="price">$100.00</span>
+				  <button class="add-cart-btn">Add to Cart</button>
+
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="product">
+			<div class="product-card">
+			  <h2 class="name">Title6</h2>
+			  <span class="price">$250.00</span>
+			  <a class="popup-btn">Quick View</a>
+			  <img src="images/1.jpg" class="product-img" alt="">
+			</div>
+			<div class="popup-view">
+			  <div class="popup-card">
+				<a><i class="fas fa-times close-btn"></i></a>
+				<div class="product-img">
+				  <img src="images/1.jpg" alt="">
+				</div>
+				<div class="info">
+				  <h2>Title<br><span>Subtitle</span></h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				  <span class="price">$250.00</span>
+				  <button class="add-cart-btn">Add to Cart</button>
+
+				</div>
+			  </div>
+			</div>
+		  </div>
+	  </div>
+	  
+</section>	
+<section id="characters" style="background: linear-gradient(to bottom, lightgreen, cyan);">
+	<h1>2D Artworks</h1>
+	<h2 class="section-title">Characters</h2>
+	<div class="container">
+		<div class="product">
+		  <div class="product-card">
+			<h2 class="name">Title1</h2>
+			<span class="price">$120.00</span>
+			<a class="popup-btn">Quick View</a>
+			<img src="images/1.jpg" class="product-img" alt="">
+		  </div>
+		  <div class="popup-view">
+			<div class="popup-card">
+			  <a><i class="fas fa-times close-btn"></i></a>
+			  <div class="product-img">
+				<img src="images/1.jpg" alt="">
+			  </div>
+			  <div class="info">
+				<h2>Title1<br><span>Subtitle1</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<span class="price">$120.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="product">
+		  <div class="product-card">
+			<h2 class="name">Title2</h2>
+			<span class="price">$100.00</span>
+			<a class="popup-btn">Quick View</a>
+			<img src="images/1.jpg" class="product-img" alt="">
+		  </div>
+		  <div class="popup-view">
+			<div class="popup-card">
+			  <a><i class="fas fa-times close-btn"></i></a>
+			  <div class="product-img">
+				<img src="images/1.jpg" alt="">
+			  </div>
+			  <div class="info">
+				<h2>Title<br><span>Subtitle1</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<span class="price">$100.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="product">
+		  <div class="product-card">
+			<h2 class="name">Title3</h2>
+			<span class="price">$250.00</span>
+			<a class="popup-btn">Quick View</a>
+			<img src="images/1.jpg" class="product-img" alt="">
+		  </div>
+		  <div class="popup-view">
+			<div class="popup-card">
+			  <a><i class="fas fa-times close-btn"></i></a>
+			  <div class="product-img">
+				<img src="images/1.jpg" alt="">
+			  </div>
+			  <div class="info">
+				<h2>Title<br><span>Subtitle</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<span class="price">$250.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="product">
+			<div class="product-card">
+			  <h2 class="name">Title4</h2>
+			  <span class="price">$120.00</span>
+			  <a class="popup-btn">Quick View</a>
+			  <img src="images/1.jpg" class="product-img" alt="">
+			</div>
+			<div class="popup-view">
+			  <div class="popup-card">
+				<a><i class="fas fa-times close-btn"></i></a>
+				<div class="product-img">
+				  <img src="images/1.jpg" alt="">
+				</div>
+				<div class="info">
+				  <h2>Title<br><span>Subtitle</span></h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				  <span class="price">$120.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="product">
+			<div class="product-card">
+			  <h2 class="name">Title5</h2>
+			  <span class="price">$100.00</span>
+			  <a class="popup-btn">Quick View</a>
+			  <img src="images/1.jpg" class="product-img" alt="">
+			</div>
+			<div class="popup-view">
+			  <div class="popup-card">
+				<a><i class="fas fa-times close-btn"></i></a>
+				<div class="product-img">
+				  <img src="images/1.jpg" alt="">
+				</div>
+				<div class="info">
+				  <h2>Title<br><span>Subtitle</span></h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				  <span class="price">$100.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="product">
+			<div class="product-card">
+			  <h2 class="name">Title6</h2>
+			  <span class="price">$250.00</span>
+			  <a class="popup-btn">Quick View</a>
+			  <img src="images/1.jpg" class="product-img" alt="">
+			</div>
+			<div class="popup-view">
+			  <div class="popup-card">
+				<a><i class="fas fa-times close-btn"></i></a>
+				<div class="product-img">
+				  <img src="images/1.jpg" alt="">
+				</div>
+				<div class="info">
+				  <h2>Title<br><span>Subtitle</span></h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				  <span class="price">$250.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+				</div>
+			  </div>
+			</div>
+		  </div>
+	  </div>
+	  
+</section>
+
+<section id="nature" style="background: linear-gradient(to bottom, Cyan, #1585ad);">
+	<h2 class="section-title">Nature</h2>
+	<div class="container">
+		<div class="product">
+		  <div class="product-card">
+			<h2 class="name">Title1</h2>
+			<span class="price">$120.00</span>
+			<a class="popup-btn">Quick View</a>
+			<img src="images/1.jpg" class="product-img" alt="">
+		  </div>
+		  <div class="popup-view">
+			<div class="popup-card">
+			  <a><i class="fas fa-times close-btn"></i></a>
+			  <div class="product-img">
+				<img src="images/1.jpg" alt="">
+			  </div>
+			  <div class="info">
+				<h2>Title1<br><span>Subtitle1</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<span class="price">$120.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="product">
+		  <div class="product-card">
+			<h2 class="name">Title2</h2>
+			<span class="price">$100.00</span>
+			<a class="popup-btn">Quick View</a>
+			<img src="images/1.jpg" class="product-img" alt="">
+		  </div>
+		  <div class="popup-view">
+			<div class="popup-card">
+			  <a><i class="fas fa-times close-btn"></i></a>
+			  <div class="product-img">
+				<img src="images/1.jpg" alt="">
+			  </div>
+			  <div class="info">
+				<h2>Title<br><span>Subtitle1</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<span class="price">$100.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="product">
+		  <div class="product-card">
+			<h2 class="name">Title3</h2>
+			<span class="price">$250.00</span>
+			<a class="popup-btn">Quick View</a>
+			<img src="images/1.jpg" class="product-img" alt="">
+		  </div>
+		  <div class="popup-view">
+			<div class="popup-card">
+			  <a><i class="fas fa-times close-btn"></i></a>
+			  <div class="product-img">
+				<img src="images/1.jpg" alt="">
+			  </div>
+			  <div class="info">
+				<h2>Title<br><span>Subtitle</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<span class="price">$250.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="product">
+			<div class="product-card">
+			  <h2 class="name">Title4</h2>
+			  <span class="price">$120.00</span>
+			  <a class="popup-btn">Quick View</a>
+			  <img src="images/1.jpg" class="product-img" alt="">
+			</div>
+			<div class="popup-view">
+			  <div class="popup-card">
+				<a><i class="fas fa-times close-btn"></i></a>
+				<div class="product-img">
+				  <img src="images/1.jpg" alt="">
+				</div>
+				<div class="info">
+				  <h2>Title<br><span>Subtitle</span></h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				  <span class="price">$120.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
 				  <a href="#" class="add-wish">Add to Wishlist</a>
 				</div>
 			  </div>
@@ -365,7 +531,8 @@
 				  <h2>Title<br><span>Subtitle</span></h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				  <span class="price">$100.00</span>
-				  <a href="#" class="add-cart-btn">Add to Cart</a>
+				<button class="add-cart-btn">Add to Cart</button>
+
 				  <a href="#" class="add-wish">Add to Wishlist</a>
 				</div>
 			  </div>
@@ -388,7 +555,8 @@
 				  <h2>Title<br><span>Subtitle</span></h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				  <span class="price">$250.00</span>
-				  <a href="#" class="add-cart-btn">Add to Cart</a>
+				<button class="add-cart-btn">Add to Cart</button>
+
 				  <a href="#" class="add-wish">Add to Wishlist</a>
 				</div>
 			  </div>
@@ -396,14 +564,928 @@
 		  </div>
 	  </div>
 	  
-</section>	
+</section>
+
+<section id="weapon">
+	<h2 class="section-title">Weapon Artworks</h2>
+	<div class="container">
+		<div class="product">
+		  <div class="product-card">
+			<h2 class="name">Title1</h2>
+			<span class="price">$120.00</span>
+			<a class="popup-btn">Quick View</a>
+			<img src="images/1.jpg" class="product-img" alt="">
+		  </div>
+		  <div class="popup-view">
+			<div class="popup-card">
+			  <a><i class="fas fa-times close-btn"></i></a>
+			  <div class="product-img">
+				<img src="images/1.jpg" alt="">
+			  </div>
+			  <div class="info">
+				<h2>Title1<br><span>Subtitle1</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<span class="price">$120.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
 
 
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="product">
+		  <div class="product-card">
+			<h2 class="name">Title2</h2>
+			<span class="price">$100.00</span>
+			<a class="popup-btn">Quick View</a>
+			<img src="images/1.jpg" class="product-img" alt="">
+		  </div>
+		  <div class="popup-view">
+			<div class="popup-card">
+			  <a><i class="fas fa-times close-btn"></i></a>
+			  <div class="product-img">
+				<img src="images/1.jpg" alt="">
+			  </div>
+			  <div class="info">
+				<h2>Title<br><span>Subtitle1</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<span class="price">$100.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="product">
+		  <div class="product-card">
+			<h2 class="name">Title3</h2>
+			<span class="price">$250.00</span>
+			<a class="popup-btn">Quick View</a>
+			<img src="images/1.jpg" class="product-img" alt="">
+		  </div>
+		  <div class="popup-view">
+			<div class="popup-card">
+			  <a><i class="fas fa-times close-btn"></i></a>
+			  <div class="product-img">
+				<img src="images/1.jpg" alt="">
+			  </div>
+			  <div class="info">
+				<h2>Title<br><span>Subtitle</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<span class="price">$250.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="product">
+			<div class="product-card">
+			  <h2 class="name">Title4</h2>
+			  <span class="price">$120.00</span>
+			  <a class="popup-btn">Quick View</a>
+			  <img src="images/1.jpg" class="product-img" alt="">
+			</div>
+			<div class="popup-view">
+			  <div class="popup-card">
+				<a><i class="fas fa-times close-btn"></i></a>
+				<div class="product-img">
+				  <img src="images/1.jpg" alt="">
+				</div>
+				<div class="info">
+				  <h2>Title<br><span>Subtitle</span></h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				  <span class="price">$120.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="product">
+			<div class="product-card">
+			  <h2 class="name">Title5</h2>
+			  <span class="price">$100.00</span>
+			  <a class="popup-btn">Quick View</a>
+			  <img src="images/1.jpg" class="product-img" alt="">
+			</div>
+			<div class="popup-view">
+			  <div class="popup-card">
+				<a><i class="fas fa-times close-btn"></i></a>
+				<div class="product-img">
+				  <img src="images/1.jpg" alt="">
+				</div>
+				<div class="info">
+				  <h2>Title<br><span>Subtitle</span></h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				  <span class="price">$100.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="product">
+			<div class="product-card">
+			  <h2 class="name">Title6</h2>
+			  <span class="price">$250.00</span>
+			  <a class="popup-btn">Quick View</a>
+			  <img src="images/1.jpg" class="product-img" alt="">
+			</div>
+			<div class="popup-view">
+			  <div class="popup-card">
+				<a><i class="fas fa-times close-btn"></i></a>
+				<div class="product-img">
+				  <img src="images/1.jpg" alt="">
+				</div>
+				<div class="info">
+				  <h2>Title<br><span>Subtitle</span></h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				  <span class="price">$250.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+				  <a href="#" class="add-wish">Add to Wishlist</a>
+				</div>
+			  </div>
+			</div>
+		  </div>
+	  </div>
+	  
+</section>
+
+<section id="furniture">
+	<h2 class="section-title">Furniture Artworks</h2>
+	<div class="container">
+		<div class="product">
+		  <div class="product-card">
+			<h2 class="name">Title1</h2>
+			<span class="price">$120.00</span>
+			<a class="popup-btn">Quick View</a>
+			<img src="images/1.jpg" class="product-img" alt="">
+		  </div>
+		  <div class="popup-view">
+			<div class="popup-card">
+			  <a><i class="fas fa-times close-btn"></i></a>
+			  <div class="product-img">
+				<img src="images/1.jpg" alt="">
+			  </div>
+			  <div class="info">
+				<h2>Title1<br><span>Subtitle1</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<span class="price">$120.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="product">
+		  <div class="product-card">
+			<h2 class="name">Title2</h2>
+			<span class="price">$100.00</span>
+			<a class="popup-btn">Quick View</a>
+			<img src="images/1.jpg" class="product-img" alt="">
+		  </div>
+		  <div class="popup-view">
+			<div class="popup-card">
+			  <a><i class="fas fa-times close-btn"></i></a>
+			  <div class="product-img">
+				<img src="images/1.jpg" alt="">
+			  </div>
+			  <div class="info">
+				<h2>Title<br><span>Subtitle1</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<span class="price">$100.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="product">
+		  <div class="product-card">
+			<h2 class="name">Title3</h2>
+			<span class="price">$250.00</span>
+			<a class="popup-btn">Quick View</a>
+			<img src="images/1.jpg" class="product-img" alt="">
+		  </div>
+		  <div class="popup-view">
+			<div class="popup-card">
+			  <a><i class="fas fa-times close-btn"></i></a>
+			  <div class="product-img">
+				<img src="images/1.jpg" alt="">
+			  </div>
+			  <div class="info">
+				<h2>Title<br><span>Subtitle</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<span class="price">$250.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="product">
+			<div class="product-card">
+			  <h2 class="name">Title4</h2>
+			  <span class="price">$120.00</span>
+			  <a class="popup-btn">Quick View</a>
+			  <img src="images/1.jpg" class="product-img" alt="">
+			</div>
+			<div class="popup-view">
+			  <div class="popup-card">
+				<a><i class="fas fa-times close-btn"></i></a>
+				<div class="product-img">
+				  <img src="images/1.jpg" alt="">
+				</div>
+				<div class="info">
+				  <h2>Title<br><span>Subtitle</span></h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				  <span class="price">$120.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="product">
+			<div class="product-card">
+			  <h2 class="name">Title5</h2>
+			  <span class="price">$100.00</span>
+			  <a class="popup-btn">Quick View</a>
+			  <img src="images/1.jpg" class="product-img" alt="">
+			</div>
+			<div class="popup-view">
+			  <div class="popup-card">
+				<a><i class="fas fa-times close-btn"></i></a>
+				<div class="product-img">
+				  <img src="images/1.jpg" alt="">
+				</div>
+				<div class="info">
+				  <h2>Title<br><span>Subtitle</span></h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				  <span class="price">$100.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="product">
+			<div class="product-card">
+			  <h2 class="name">Title6</h2>
+			  <span class="price">$250.00</span>
+			  <a class="popup-btn">Quick View</a>
+			  <img src="images/1.jpg" class="product-img" alt="">
+			</div>
+			<div class="popup-view">
+			  <div class="popup-card">
+				<a><i class="fas fa-times close-btn"></i></a>
+				<div class="product-img">
+				  <img src="images/1.jpg" alt="">
+				</div>
+				<div class="info">
+				  <h2>Title<br><span>Subtitle</span></h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				  <span class="price">$250.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+				</div>
+			  </div>
+			</div>
+		  </div>
+	  </div>
+	  
+</section>
+
+<section id="animals">
+	<h1>3D Artworks</h1>
+	<h2 class="section-title">Animals Artworks</h2>
+	<div class="container">
+		<div class="product">
+		  <div class="product-card">
+			<h2 class="name">Title1</h2>
+			<span class="price">$120.00</span>
+			<a class="popup-btn">Quick View</a>
+			<img src="images/1.jpg" class="product-img" alt="">
+		  </div>
+		  <div class="popup-view">
+			<div class="popup-card">
+			  <a><i class="fas fa-times close-btn"></i></a>
+			  <div class="product-img">
+				<img src="images/1.jpg" alt="">
+			  </div>
+			  <div class="info">
+				<h2>Title1<br><span>Subtitle1</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<span class="price">$120.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="product">
+		  <div class="product-card">
+			<h2 class="name">Title2</h2>
+			<span class="price">$100.00</span>
+			<a class="popup-btn">Quick View</a>
+			<img src="images/1.jpg" class="product-img" alt="">
+		  </div>
+		  <div class="popup-view">
+			<div class="popup-card">
+			  <a><i class="fas fa-times close-btn"></i></a>
+			  <div class="product-img">
+				<img src="images/1.jpg" alt="">
+			  </div>
+			  <div class="info">
+				<h2>Title<br><span>Subtitle1</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<span class="price">$100.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="product">
+		  <div class="product-card">
+			<h2 class="name">Title3</h2>
+			<span class="price">$250.00</span>
+			<a class="popup-btn">Quick View</a>
+			<img src="images/1.jpg" class="product-img" alt="">
+		  </div>
+		  <div class="popup-view">
+			<div class="popup-card">
+			  <a><i class="fas fa-times close-btn"></i></a>
+			  <div class="product-img">
+				<img src="images/1.jpg" alt="">
+			  </div>
+			  <div class="info">
+				<h2>Title<br><span>Subtitle</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<span class="price">$250.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="product">
+			<div class="product-card">
+			  <h2 class="name">Title4</h2>
+			  <span class="price">$120.00</span>
+			  <a class="popup-btn">Quick View</a>
+			  <img src="images/1.jpg" class="product-img" alt="">
+			</div>
+			<div class="popup-view">
+			  <div class="popup-card">
+				<a><i class="fas fa-times close-btn"></i></a>
+				<div class="product-img">
+				  <img src="images/1.jpg" alt="">
+				</div>
+				<div class="info">
+				  <h2>Title<br><span>Subtitle</span></h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				  <span class="price">$120.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="product">
+			<div class="product-card">
+			  <h2 class="name">Title5</h2>
+			  <span class="price">$100.00</span>
+			  <a class="popup-btn">Quick View</a>
+			  <img src="images/1.jpg" class="product-img" alt="">
+			</div>
+			<div class="popup-view">
+			  <div class="popup-card">
+				<a><i class="fas fa-times close-btn"></i></a>
+				<div class="product-img">
+				  <img src="images/1.jpg" alt="">
+				</div>
+				<div class="info">
+				  <h2>Title<br><span>Subtitle</span></h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				  <span class="price">$100.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="product">
+			<div class="product-card">
+			  <h2 class="name">Title6</h2>
+			  <span class="price">$250.00</span>
+			  <a class="popup-btn">Quick View</a>
+			  <img src="images/1.jpg" class="product-img" alt="">
+			</div>
+			<div class="popup-view">
+			  <div class="popup-card">
+				<a><i class="fas fa-times close-btn"></i></a>
+				<div class="product-img">
+				  <img src="images/1.jpg" alt="">
+				</div>
+				<div class="info">
+				  <h2>Title<br><span>Subtitle</span></h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				  <span class="price">$250.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+	  </div>
+	  
+</section>
+
+<section id="furniture3d">
+	<h2 class="section-title">Furniture Artworks</h2>
+	<div class="container">
+		<div class="product">
+		  <div class="product-card">
+			<h2 class="name">Title1</h2>
+			<span class="price">$120.00</span>
+			<a class="popup-btn">Quick View</a>
+			<img src="images/1.jpg" class="product-img" alt="">
+		  </div>
+		  <div class="popup-view">
+			<div class="popup-card">
+			  <a><i class="fas fa-times close-btn"></i></a>
+			  <div class="product-img">
+				<img src="images/1.jpg" alt="">
+			  </div>
+			  <div class="info">
+				<h2>Title1<br><span>Subtitle1</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<span class="price">$120.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="product">
+		  <div class="product-card">
+			<h2 class="name">Title2</h2>
+			<span class="price">$100.00</span>
+			<a class="popup-btn">Quick View</a>
+			<img src="images/1.jpg" class="product-img" alt="">
+		  </div>
+		  <div class="popup-view">
+			<div class="popup-card">
+			  <a><i class="fas fa-times close-btn"></i></a>
+			  <div class="product-img">
+				<img src="images/1.jpg" alt="">
+			  </div>
+			  <div class="info">
+				<h2>Title<br><span>Subtitle1</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<span class="price">$100.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="product">
+		  <div class="product-card">
+			<h2 class="name">Title3</h2>
+			<span class="price">$250.00</span>
+			<a class="popup-btn">Quick View</a>
+			<img src="images/1.jpg" class="product-img" alt="">
+		  </div>
+		  <div class="popup-view">
+			<div class="popup-card">
+			  <a><i class="fas fa-times close-btn"></i></a>
+			  <div class="product-img">
+				<img src="images/1.jpg" alt="">
+			  </div>
+			  <div class="info">
+				<h2>Title<br><span>Subtitle</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<span class="price">$250.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="product">
+			<div class="product-card">
+			  <h2 class="name">Title4</h2>
+			  <span class="price">$120.00</span>
+			  <a class="popup-btn">Quick View</a>
+			  <img src="images/1.jpg" class="product-img" alt="">
+			</div>
+			<div class="popup-view">
+			  <div class="popup-card">
+				<a><i class="fas fa-times close-btn"></i></a>
+				<div class="product-img">
+				  <img src="images/1.jpg" alt="">
+				</div>
+				<div class="info">
+				  <h2>Title<br><span>Subtitle</span></h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				  <span class="price">$120.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="product">
+			<div class="product-card">
+			  <h2 class="name">Title5</h2>
+			  <span class="price">$100.00</span>
+			  <a class="popup-btn">Quick View</a>
+			  <img src="images/1.jpg" class="product-img" alt="">
+			</div>
+			<div class="popup-view">
+			  <div class="popup-card">
+				<a><i class="fas fa-times close-btn"></i></a>
+				<div class="product-img">
+				  <img src="images/1.jpg" alt="">
+				</div>
+				<div class="info">
+				  <h2>Title<br><span>Subtitle</span></h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				  <span class="price">$100.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="product">
+			<div class="product-card">
+			  <h2 class="name">Title6</h2>
+			  <span class="price">$250.00</span>
+			  <a class="popup-btn">Quick View</a>
+			  <img src="images/1.jpg" class="product-img" alt="">
+			</div>
+			<div class="popup-view">
+			  <div class="popup-card">
+				<a><i class="fas fa-times close-btn"></i></a>
+				<div class="product-img">
+				  <img src="images/1.jpg" alt="">
+				</div>
+				<div class="info">
+				  <h2>Title<br><span>Subtitle</span></h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				  <span class="price">$250.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+
+				</div>
+			  </div>
+			</div>
+		  </div>
+	  </div>
+	  
+</section>
+
+<section id="vehicle">
+	<h2 class="section-title">Vehicle Artworks</h2>
+	<div class="container">
+		<div class="product">
+		  <div class="product-card">
+			<h2 class="name">Title1</h2>
+			<span class="price">$120.00</span>
+			<a class="popup-btn">Quick View</a>
+			<img src="images/1.jpg" class="product-img" alt="">
+		  </div>
+		  <div class="popup-view">
+			<div class="popup-card">
+			  <a><i class="fas fa-times close-btn"></i></a>
+			  <div class="product-img">
+				<img src="images/1.jpg" alt="">
+			  </div>
+			  <div class="info">
+				<h2>Title1<br><span>Subtitle1</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<span class="price">$120.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="product">
+		  <div class="product-card">
+			<h2 class="name">Title2</h2>
+			<span class="price">$100.00</span>
+			<a class="popup-btn">Quick View</a>
+			<img src="images/1.jpg" class="product-img" alt="">
+		  </div>
+		  <div class="popup-view">
+			<div class="popup-card">
+			  <a><i class="fas fa-times close-btn"></i></a>
+			  <div class="product-img">
+				<img src="images/1.jpg" alt="">
+			  </div>
+			  <div class="info">
+				<h2>Title<br><span>Subtitle1</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<span class="price">$100.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="product">
+		  <div class="product-card">
+			<h2 class="name">Title3</h2>
+			<span class="price">$250.00</span>
+			<a class="popup-btn">Quick View</a>
+			<img src="images/1.jpg" class="product-img" alt="">
+		  </div>
+		  <div class="popup-view">
+			<div class="popup-card">
+			  <a><i class="fas fa-times close-btn"></i></a>
+			  <div class="product-img">
+				<img src="images/1.jpg" alt="">
+			  </div>
+			  <div class="info">
+				<h2>Title<br><span>Subtitle</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<span class="price">$250.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="product">
+			<div class="product-card">
+			  <h2 class="name">Title4</h2>
+			  <span class="price">$120.00</span>
+			  <a class="popup-btn">Quick View</a>
+			  <img src="images/1.jpg" class="product-img" alt="">
+			</div>
+			<div class="popup-view">
+			  <div class="popup-card">
+				<a><i class="fas fa-times close-btn"></i></a>
+				<div class="product-img">
+				  <img src="images/1.jpg" alt="">
+				</div>
+				<div class="info">
+				  <h2>Title<br><span>Subtitle</span></h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				  <span class="price">$120.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="product">
+			<div class="product-card">
+			  <h2 class="name">Title5</h2>
+			  <span class="price">$100.00</span>
+			  <a class="popup-btn">Quick View</a>
+			  <img src="images/1.jpg" class="product-img" alt="">
+			</div>
+			<div class="popup-view">
+			  <div class="popup-card">
+				<a><i class="fas fa-times close-btn"></i></a>
+				<div class="product-img">
+				  <img src="images/1.jpg" alt="">
+				</div>
+				<div class="info">
+				  <h2>Title<br><span>Subtitle</span></h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				  <span class="price">$100.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+				  <a href="#" class="add-wish">Add to Wishlist</a>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="product">
+			<div class="product-card">
+			  <h2 class="name">Title6</h2>
+			  <span class="price">$250.00</span>
+			  <a class="popup-btn">Quick View</a>
+			  <img src="images/1.jpg" class="product-img" alt="">
+			</div>
+			<div class="popup-view">
+			  <div class="popup-card">
+				<a><i class="fas fa-times close-btn"></i></a>
+				<div class="product-img">
+				  <img src="images/1.jpg" alt="">
+				</div>
+				<div class="info">
+				  <h2>Title<br><span>Subtitle</span></h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				  <span class="price">$250.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+				</div>
+			  </div>
+			</div>
+		  </div>
+	  </div>
+	  
+</section>
+
+<section id="equipment">
+	<h2 class="section-title">Equipment Artworks</h2>
+	<div class="container">
+		<div class="product">
+		  <div class="product-card">
+			<h2 class="name">Title1</h2>
+			<span class="price">$120.00</span>
+			<a class="popup-btn">Quick View</a>
+			<img src="images/1.jpg" class="product-img" alt="">
+		  </div>
+		  <div class="popup-view">
+			<div class="popup-card">
+			  <a><i class="fas fa-times close-btn"></i></a>
+			  <div class="product-img">
+				<img src="images/1.jpg" alt="">
+			  </div>
+			  <div class="info">
+				<h2>Title1<br><span>Subtitle1</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<span class="price">$120.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="product">
+		  <div class="product-card">
+			<h2 class="name">Title2</h2>
+			<span class="price">$100.00</span>
+			<a class="popup-btn">Quick View</a>
+			<img src="images/1.jpg" class="product-img" alt="">
+		  </div>
+		  <div class="popup-view">
+			<div class="popup-card">
+			  <a><i class="fas fa-times close-btn"></i></a>
+			  <div class="product-img">
+				<img src="images/1.jpg" alt="">
+			  </div>
+			  <div class="info">
+				<h2>Title<br><span>Subtitle1</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<span class="price">$100.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="product">
+		  <div class="product-card">
+			<h2 class="name">Title3</h2>
+			<span class="price">$250.00</span>
+			<a class="popup-btn">Quick View</a>
+			<img src="images/1.jpg" class="product-img" alt="">
+		  </div>
+		  <div class="popup-view">
+			<div class="popup-card">
+			  <a><i class="fas fa-times close-btn"></i></a>
+			  <div class="product-img">
+				<img src="images/1.jpg" alt="">
+			  </div>
+			  <div class="info">
+				<h2>Title<br><span>Subtitle</span></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<span class="price">$250.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="product">
+			<div class="product-card">
+			  <h2 class="name">Title4</h2>
+			  <span class="price">$120.00</span>
+			  <a class="popup-btn">Quick View</a>
+			  <img src="images/1.jpg" class="product-img" alt="">
+			</div>
+			<div class="popup-view">
+			  <div class="popup-card">
+				<a><i class="fas fa-times close-btn"></i></a>
+				<div class="product-img">
+				  <img src="images/1.jpg" alt="">
+				</div>
+				<div class="info">
+				  <h2>Title<br><span>Subtitle</span></h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				  <span class="price">$120.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="product">
+			<div class="product-card">
+			  <h2 class="name">Title5</h2>
+			  <span class="price">$100.00</span>
+			  <a class="popup-btn">Quick View</a>
+			  <img src="images/1.jpg" class="product-img" alt="">
+			</div>
+			<div class="popup-view">
+			  <div class="popup-card">
+				<a><i class="fas fa-times close-btn"></i></a>
+				<div class="product-img">
+				  <img src="images/1.jpg" alt="">
+				</div>
+				<div class="info">
+				  <h2>Title<br><span>Subtitle</span></h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				  <span class="price">$100.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="product">
+			<div class="product-card">
+			  <h2 class="name">Title6</h2>
+			  <span class="price">$250.00</span>
+			  <a class="popup-btn">Quick View</a>
+			  <img src="images/1.jpg" class="product-img" alt="">
+			</div>
+			<div class="popup-view">
+			  <div class="popup-card">
+				<a><i class="fas fa-times close-btn"></i></a>
+				<div class="product-img">
+				  <img src="images/1.jpg" alt="">
+				</div>
+				<div class="info">
+				  <h2>Title<br><span>Subtitle</span></h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				  <span class="price">$250.00</span>
+				<button class="add-cart-btn">Add to Cart</button>
+
+				</div>
+			  </div>
+			</div>
+		  </div>
+	  </div>
+	  
+</section>
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <table class="show-cart table">
+			
+		  </table>
+		  <div>Total price: $<span class="total-cart"></span></div>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		  <button type="button" class="btn btn-primary">Order now</button>
+		</div>
+	  </div>
+	</div>
+  </div>
 <footer>
 		<p>&copy; 2023 Art Fusion. All rights reserved.</p>
 	</footer>
 </body>
 
 <script src="javascript/myscripts.js" charset="UTF-8"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </html>

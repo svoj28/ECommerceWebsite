@@ -22,7 +22,7 @@ body {
 
 header{
 	z-index: 999;
-	position: fixed;
+	position: sticky;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -387,7 +387,7 @@ footer{
 	left: 0;
 	width: 100%;
 	height: 100%;
-	filter: blur(10px); /* Adjust the value to control the blur effect */
+	filter: blur(10px); 
 	z-index: -999;
   }
   
@@ -432,7 +432,6 @@ footer{
     align-items: center;
     background: #1D212B;
     padding-bottom: 10px;
-	margin-top: 79px;
 }
 
 .container{
@@ -445,7 +444,6 @@ footer{
 	height: auto;
   }
   
-  /*Styles for product card*/
   
   .product .product-card{
     z-index: 1;
@@ -517,8 +515,6 @@ footer{
 	border-radius: 20px;
 	cursor: pointer;
   }
-  
-  /*Styles for popup view*/
   
   .product .popup-view{
 	z-index: 2;
@@ -635,5 +631,101 @@ footer{
 	font-weight: 600;
 	text-transform: uppercase;
   }
-  
-  
+  h1{
+	text-align: center;
+    font-size: 45px;
+  }
+  .show-cart li {
+	display: flex;
+  }
+  .modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.fade.in {
+    opacity: 1;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+}
+.modal.in .modal-dialog {
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,0);
+}
+.modal.fade .modal-dialog {
+    -webkit-transform: translate(0,-25%);
+    -ms-transform: translate(0,-25%);
+    -o-transform: translate(0,-25%);
+    transform: translate(0,-25%);
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -o-transition: -o-transform .3s ease-out;
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out,-webkit-transform .3s ease-out,-o-transform .3s ease-out;
+}
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    outline: 0;
+}
+.modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.modal-body {
+    position: relative;
+    padding: 15px;
+}
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+table {
+    background-color: transparent;
+	border-collapse: collapse;
+    border-spacing: 0;
+}
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: gray;
+}
+
+.cart-btn{
+	color: black;
+}
+.cart-btn button{
+	background-color: red;
+	border: none;
+	cursor: pointer;
+	margin: 10px;
+	padding: 10px;
+	font-weight: 100;
+}
