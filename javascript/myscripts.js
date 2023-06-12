@@ -1,5 +1,5 @@
 var slides = document.querySelectorAll('.slide');
-var btns = document.querySelectorAll('.button');
+var btns = document.querySelectorAll('.buttonzz');
 let currentSlide = 1;
 
 var manualNav = function(manual) {
@@ -7,16 +7,16 @@ var manualNav = function(manual) {
     slide.classList.remove('active');
   });
 
-  btns.forEach(function(button) {
-    button.classList.remove('active');
+  btns.forEach(function(buttonzz) {
+    buttonzz.classList.remove('active');
   });
 
   slides[manual].classList.add('active');
   btns[manual].classList.add('active');
 }
 
-btns.forEach((button, i) => {
-  button.addEventListener("click", () => {
+btns.forEach((buttonzz, i) => {
+  buttonzz.addEventListener("click", () => {
     manualNav(i);
     currentSlide = i;
   });
@@ -55,28 +55,26 @@ repeat();
 
 
 var popupViews = document.querySelectorAll('.popup-view');
-    var popupBtns = document.querySelectorAll('.popup-btn');
-    var closeBtns = document.querySelectorAll('.close-btn');
+var popupBtns = document.querySelectorAll('.popup-btn');
 
-    //javascript for quick view button
-    var popup = function(popupClick){
-      popupViews[popupClick].classList.add('active');
-    }
+var openPopup = function(popupClick) {
+  popupViews[popupClick].classList.add('active');
+}
 
-    popupBtns.forEach((popupBtn, i) => {
-      popupBtn.addEventListener("click", () => {
-        popup(i);
-      });
-    });
+popupBtns.forEach((popupBtn, i) => {
+  popupBtn.addEventListener("click", () => {
+    openPopup(i);
+  });
+});
 
-    //javascript for close button
-    closeBtns.forEach((closeBtn) => {
-      closeBtn.addEventListener("click", () => {
-        popupViews.forEach((popupView) => {
-          popupView.classList.remove('active');
-        });
-      });
-    });
+var closeBtns = document.querySelectorAll('.popup-view .close-btn');
+closeBtns.forEach((closeBtn) => {
+  closeBtn.addEventListener("click", () => {
+    var popupView = closeBtn.closest('.popup-view');
+    popupView.classList.remove('active');
+  });
+});
+
 
 // ************************************************
 // Shopping Cart API
@@ -224,6 +222,8 @@ $('.clear-cart').click(function() {
 function displayCart() {
   var cartArray = shoppingCart.listCart();
   var output = "";
+  var totalPrice = 0; // Initialize total price variable
+  
   for(var i in cartArray) {
     output += "<tr>"
       + "<td>" + cartArray[i].name + "</td>" 
@@ -235,11 +235,25 @@ function displayCart() {
       + " = " 
       + "<td>" + cartArray[i].total + "</td>" 
       +  "</tr>";
+      
+    totalPrice += cartArray[i].total; // Add item total to the total price
   }
+  
+  // Add shipping fee to the total price
+  var taxPercentage = 12; // 12% tax rate
+
+  // Calculate the tax amount
+  var taxAmount = (parseFloat(totalPrice) * taxPercentage) / 100;
+  
+  // Add the tax amount to the total price
+  totalPrice = parseFloat(totalPrice) + taxAmount;
+
   $('.show-cart').html(output);
-  $('.total-cart').html(shoppingCart.totalCart());
+  $('.total-cart').html(totalPrice.toFixed(2)); // Display the updated total price with 2 decimal places
   $('.total-count').html(shoppingCart.totalCount());
 }
+
+
 
 // Delete item button
 
@@ -272,3 +286,94 @@ $('.show-cart').on("change", ".item-count", function(event) {
 });
 
 displayCart();
+
+var animateButton = function(e) {
+
+  e.preventDefault;
+  //reset animation
+  e.target.classList.remove('animate');
+  
+  e.target.classList.add('animate');
+  
+  e.target.classList.add('animate');
+  setTimeout(function(){
+    e.target.classList.remove('animate');
+  },6000);
+};
+
+var classname = document.getElementsByClassName("button");
+
+for (var i = 0; i < classname.length; i++) {
+  classname[i].addEventListener('click', animateButton, false);
+}
+
+function validateAndAnimate(event) {
+  event.preventDefault(); // Prevent the form from submitting
+
+  // Get the form values
+  const name = document.getElementById('name').value.trim();
+  const address = document.getElementById('address').value.trim();
+  const contact = document.getElementById('contact').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const totalPrice = document.querySelector('.total-cart').textContent.trim();
+  const selectedPayment = document.querySelector('input[name="payment"]:checked');
+
+  // Check if any field or total price is empty
+  if (name === '' || address === '' || contact === '' || email === '' || totalPrice === '0.00') {
+    // Show error state animation and button
+    const errorBlock = document.querySelector('.block');
+    errorBlock.innerHTML = '<button class="button animate error"></button>';
+    
+    setTimeout(function() {
+      // Reset to original button
+      errorBlock.innerHTML = '<button class="button success" type="submit" onclick="validateAndAnimate(event)">CHECKOUT</button>';
+    }, 5000); // Reset after 5 seconds
+  } else if (!selectedPayment) {
+    // Show error state animation and button
+    const errorBlock = document.querySelector('.block');
+    errorBlock.innerHTML = '<button class="button animate error"></button>';
+  
+    // Insert error message for payment selection
+    const errorMessage = document.createElement('p');
+    errorMessage.textContent = 'Please select a mode of payment';
+    errorBlock.appendChild(errorMessage);
+  
+    setTimeout(function() {
+      // Reset to original button and remove error message
+      errorBlock.innerHTML = '<button class="button success" type="submit" onclick="validateAndAnimate(event)">CHECKOUT</button>';
+    }, 5000); // Reset after 5 seconds
+  } else {
+    // Show success state animation and button
+    const successBlock = document.querySelector('.block');
+    successBlock.innerHTML = '<button class="button animate success"></button>';
+    
+    setTimeout(function() {
+      // Reset to original button
+      successBlock.innerHTML = '<button class="button success" type="submit" onclick="validateAndAnimate(event)">CHECKOUT</button>';
+    }, 5000); // Reset after 5 seconds
+  }
+}
+var popupContainer = document.getElementById("popup-container");
+var popup = document.getElementById("popup");
+
+function openPopupzz() {
+  popupContainer.style.display = "block";
+}
+
+function closePopupzz() {
+  popupContainer.style.display = "none";
+}
+
+function showPaymentForm(payment) {
+  var paymentForms = document.getElementsByClassName("payment-form");
+  for (var i = 0; i < paymentForms.length; i++) {
+    paymentForms[i].style.display = "none";
+  }
+
+  var selectedForm = document.getElementById(payment + "-form");
+  if (selectedForm) {
+    selectedForm.style.display = "block";
+  }
+}
+
+

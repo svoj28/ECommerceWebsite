@@ -48,11 +48,15 @@
 			  </li>
 			  <li class="menu-item"><a href="#">Contacts</a></li>
 			  <li class="menu-item"><div class="row">
+				
 										<div class="cart-btn">
-				  							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear Cart</button></div>
+				  							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">
+												<i class="fa fa-shopping-basket" aria-hidden="true"></i><span class="total-count"></span></button><button class="clear-cart btn btn-danger" id="clearcart">Clear Cart</button></div>
 			</div></li>
-			  
-				<input type="text" placeholder="Search..">
+			<form action="" class="serts">
+				<input 	class="searchbar" type="search" required>
+				<i class="fa fa-search" id="searchicon"></i>
+			  </form>
 			</ul>
 		  </div>
 		</header>
@@ -110,17 +114,18 @@
 				</div>
 			</div>
 			<div class="navigation">
-				<div class="button active"></div>
-				<div class="button"></div>
-				<div class="button"></div>
-				<div class="button"></div>
-				<div class="button"></div>
-				<div class="button"></div>
+				<div class="buttonzz active"></div>
+				<div class="buttonzz"></div>
+				<div class="buttonzz"></div>
+				<div class="buttonzz"></div>
+				<div class="buttonzz"></div>
+				<div class="buttonzz"></div>
 			</div>
 		</div> 
 	</section>
+	</section>
 
-<section  id="featured" style="background: linear-gradient(to bottom, #0fa30f, lightgreen);">
+<section  id="featured" style="background: linear-gradient(to bottom, cyan, white); padding-top: 10px;">
 	<h2 class="section-title">Featured Artworks</h2>
 	<div class="container">
 		<div class="product">
@@ -132,7 +137,7 @@
 		  </div>
 		  <div class="popup-view">
 			<div class="popup-card">
-			  <a><i class="fas fa-times close-btn"></i></a>
+				<a><i class="fas fa-times close-btn"></i></a>
 			  <div class="product-img">
 				<img src="images/1.jpg" alt="">
 			  </div>
@@ -140,7 +145,7 @@
 				<h2>Title1<br><span>Subtitle1</span></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<span class="price">$120.00</span>
-				<a href="#" data-name="Banana" data-price="1.22" class="add-to-cart btn btn-primary">Add to cart</a>
+				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 			  </div>
 			</div>
@@ -163,7 +168,7 @@
 				<h2>Title<br><span>Subtitle1</span></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<span class="price">$100.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
 			  </div>
@@ -187,7 +192,7 @@
 				<h2>Title<br><span>Subtitle</span></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<span class="price">$250.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
 			  </div>
@@ -211,7 +216,7 @@
 				  <h2>Title<br><span>Subtitle</span></h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				  <span class="price">$120.00</span>
-				  <button class="add-cart-btn">Add to Cart</button>
+				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 				</div>
 			  </div>
@@ -234,7 +239,7 @@
 				  <h2>Title<br><span>Subtitle</span></h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				  <span class="price">$100.00</span>
-				  <button class="add-cart-btn">Add to Cart</button>
+				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 				</div>
 			  </div>
@@ -257,7 +262,7 @@
 				  <h2>Title<br><span>Subtitle</span></h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				  <span class="price">$250.00</span>
-				  <button class="add-cart-btn">Add to Cart</button>
+				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 				</div>
 			  </div>
@@ -266,8 +271,8 @@
 	  </div>
 	  
 </section>	
-<section id="characters" style="background: linear-gradient(to bottom, lightgreen, cyan);">
-	<h1>2D Artworks</h1>
+<section id="characters" style="background: linear-gradient(to bottom,white, lightgreen);">
+	<p class="large rise" id="titlezz">2D ARTWORKS</p>
 	<h2 class="section-title">Characters</h2>
 	<div class="container">
 		<div class="product">
@@ -287,7 +292,7 @@
 				<h2>Title1<br><span>Subtitle1</span></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<span class="price">$120.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
 			  </div>
@@ -311,7 +316,7 @@
 				<h2>Title<br><span>Subtitle1</span></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<span class="price">$100.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
 			  </div>
@@ -335,7 +340,7 @@
 				<h2>Title<br><span>Subtitle</span></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<span class="price">$250.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
 			  </div>
@@ -359,7 +364,7 @@
 				  <h2>Title<br><span>Subtitle</span></h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				  <span class="price">$120.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 				</div>
 			  </div>
@@ -382,7 +387,7 @@
 				  <h2>Title<br><span>Subtitle</span></h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				  <span class="price">$100.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 				</div>
 			  </div>
@@ -405,7 +410,7 @@
 				  <h2>Title<br><span>Subtitle</span></h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				  <span class="price">$250.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 				</div>
 			  </div>
@@ -415,7 +420,7 @@
 	  
 </section>
 
-<section id="nature" style="background: linear-gradient(to bottom, Cyan, #1585ad);">
+<section id="nature" style="background: linear-gradient(to bottom, lightgreen, cyan); padding-top: 10px;">
 	<h2 class="section-title">Nature</h2>
 	<div class="container">
 		<div class="product">
@@ -435,7 +440,7 @@
 				<h2>Title1<br><span>Subtitle1</span></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<span class="price">$120.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
 			  </div>
@@ -459,7 +464,7 @@
 				<h2>Title<br><span>Subtitle1</span></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<span class="price">$100.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
 			  </div>
@@ -483,7 +488,7 @@
 				<h2>Title<br><span>Subtitle</span></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<span class="price">$250.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
 			  </div>
@@ -507,9 +512,9 @@
 				  <h2>Title<br><span>Subtitle</span></h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				  <span class="price">$120.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
-				  <a href="#" class="add-wish">Add to Wishlist</a>
+				  
 				</div>
 			  </div>
 			</div>
@@ -531,9 +536,9 @@
 				  <h2>Title<br><span>Subtitle</span></h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				  <span class="price">$100.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
-				  <a href="#" class="add-wish">Add to Wishlist</a>
+				
 				</div>
 			  </div>
 			</div>
@@ -555,9 +560,9 @@
 				  <h2>Title<br><span>Subtitle</span></h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				  <span class="price">$250.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
-				  <a href="#" class="add-wish">Add to Wishlist</a>
+				  
 				</div>
 			  </div>
 			</div>
@@ -566,7 +571,7 @@
 	  
 </section>
 
-<section id="weapon">
+<section id="weapon" style="background: linear-gradient(to bottom, cyan, white); padding-top: 10px;">
 	<h2 class="section-title">Weapon Artworks</h2>
 	<div class="container">
 		<div class="product">
@@ -586,7 +591,7 @@
 				<h2>Title1<br><span>Subtitle1</span></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<span class="price">$120.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
 			  </div>
@@ -610,7 +615,7 @@
 				<h2>Title<br><span>Subtitle1</span></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<span class="price">$100.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
 			  </div>
@@ -634,7 +639,7 @@
 				<h2>Title<br><span>Subtitle</span></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<span class="price">$250.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
 			  </div>
@@ -658,7 +663,7 @@
 				  <h2>Title<br><span>Subtitle</span></h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				  <span class="price">$120.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
 				</div>
@@ -682,7 +687,7 @@
 				  <h2>Title<br><span>Subtitle</span></h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				  <span class="price">$100.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
 				</div>
@@ -706,9 +711,9 @@
 				  <h2>Title<br><span>Subtitle</span></h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				  <span class="price">$250.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
-				  <a href="#" class="add-wish">Add to Wishlist</a>
+				  
 				</div>
 			  </div>
 			</div>
@@ -717,7 +722,7 @@
 	  
 </section>
 
-<section id="furniture">
+<section id="furniture" style="background: linear-gradient(to bottom, white, lightgreen); padding-top: 10px;">
 	<h2 class="section-title">Furniture Artworks</h2>
 	<div class="container">
 		<div class="product">
@@ -737,7 +742,7 @@
 				<h2>Title1<br><span>Subtitle1</span></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<span class="price">$120.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
 			  </div>
@@ -761,7 +766,7 @@
 				<h2>Title<br><span>Subtitle1</span></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<span class="price">$100.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
 			  </div>
@@ -785,7 +790,7 @@
 				<h2>Title<br><span>Subtitle</span></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<span class="price">$250.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
 			  </div>
@@ -809,7 +814,7 @@
 				  <h2>Title<br><span>Subtitle</span></h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				  <span class="price">$120.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 				</div>
 			  </div>
@@ -832,7 +837,7 @@
 				  <h2>Title<br><span>Subtitle</span></h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				  <span class="price">$100.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 				</div>
 			  </div>
@@ -855,7 +860,7 @@
 				  <h2>Title<br><span>Subtitle</span></h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				  <span class="price">$250.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 				</div>
 			  </div>
@@ -865,8 +870,8 @@
 	  
 </section>
 
-<section id="animals">
-	<h1>3D Artworks</h1>
+<section id="animals" style="background: linear-gradient(to bottom, lightgreen, cyan); padding-top: 10px;">
+	<p class="large rise" id="titlezz">3D ARTWORKS</p>
 	<h2 class="section-title">Animals Artworks</h2>
 	<div class="container">
 		<div class="product">
@@ -886,7 +891,7 @@
 				<h2>Title1<br><span>Subtitle1</span></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<span class="price">$120.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 			  </div>
 			</div>
@@ -909,7 +914,7 @@
 				<h2>Title<br><span>Subtitle1</span></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<span class="price">$100.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
 			  </div>
@@ -933,7 +938,7 @@
 				<h2>Title<br><span>Subtitle</span></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<span class="price">$250.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
 			  </div>
@@ -957,7 +962,7 @@
 				  <h2>Title<br><span>Subtitle</span></h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				  <span class="price">$120.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 				</div>
 			  </div>
@@ -980,7 +985,7 @@
 				  <h2>Title<br><span>Subtitle</span></h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				  <span class="price">$100.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 				</div>
 			  </div>
@@ -1003,7 +1008,7 @@
 				  <h2>Title<br><span>Subtitle</span></h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				  <span class="price">$250.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 				</div>
 			  </div>
 			</div>
@@ -1012,7 +1017,7 @@
 	  
 </section>
 
-<section id="furniture3d">
+<section id="furniture3d" style="background: linear-gradient(to bottom, cyan, white); padding-top: 10px;">
 	<h2 class="section-title">Furniture Artworks</h2>
 	<div class="container">
 		<div class="product">
@@ -1032,7 +1037,7 @@
 				<h2>Title1<br><span>Subtitle1</span></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<span class="price">$120.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
 			  </div>
@@ -1056,7 +1061,7 @@
 				<h2>Title<br><span>Subtitle1</span></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<span class="price">$100.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
 			  </div>
@@ -1080,7 +1085,7 @@
 				<h2>Title<br><span>Subtitle</span></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<span class="price">$250.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
 			  </div>
@@ -1104,7 +1109,7 @@
 				  <h2>Title<br><span>Subtitle</span></h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				  <span class="price">$120.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 				</div>
 			  </div>
@@ -1127,7 +1132,7 @@
 				  <h2>Title<br><span>Subtitle</span></h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				  <span class="price">$100.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 				</div>
 			  </div>
@@ -1150,7 +1155,7 @@
 				  <h2>Title<br><span>Subtitle</span></h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				  <span class="price">$250.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
 				</div>
@@ -1161,7 +1166,7 @@
 	  
 </section>
 
-<section id="vehicle">
+<section id="vehicle" style="background: linear-gradient(to bottom, white, lightgreen); padding-top: 10px;">
 	<h2 class="section-title">Vehicle Artworks</h2>
 	<div class="container">
 		<div class="product">
@@ -1181,7 +1186,7 @@
 				<h2>Title1<br><span>Subtitle1</span></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<span class="price">$120.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
 			  </div>
@@ -1205,7 +1210,7 @@
 				<h2>Title<br><span>Subtitle1</span></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<span class="price">$100.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
 			  </div>
@@ -1229,7 +1234,7 @@
 				<h2>Title<br><span>Subtitle</span></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<span class="price">$250.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
 			  </div>
@@ -1253,7 +1258,7 @@
 				  <h2>Title<br><span>Subtitle</span></h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				  <span class="price">$120.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 				</div>
 			  </div>
@@ -1276,9 +1281,9 @@
 				  <h2>Title<br><span>Subtitle</span></h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				  <span class="price">$100.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
-				  <a href="#" class="add-wish">Add to Wishlist</a>
+				
 				</div>
 			  </div>
 			</div>
@@ -1300,7 +1305,7 @@
 				  <h2>Title<br><span>Subtitle</span></h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				  <span class="price">$250.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 				</div>
 			  </div>
@@ -1310,7 +1315,7 @@
 	  
 </section>
 
-<section id="equipment">
+<section id="equipment" style="background: linear-gradient(to bottom, lightgreen, cyan); padding-top: 10px;">
 	<h2 class="section-title">Equipment Artworks</h2>
 	<div class="container">
 		<div class="product">
@@ -1330,7 +1335,7 @@
 				<h2>Title1<br><span>Subtitle1</span></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<span class="price">$120.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
 			  </div>
@@ -1354,7 +1359,7 @@
 				<h2>Title<br><span>Subtitle1</span></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<span class="price">$100.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
 			  </div>
@@ -1378,7 +1383,7 @@
 				<h2>Title<br><span>Subtitle</span></h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<span class="price">$250.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
 			  </div>
@@ -1402,7 +1407,7 @@
 				  <h2>Title<br><span>Subtitle</span></h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				  <span class="price">$120.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 				</div>
 			  </div>
 			</div>
@@ -1424,7 +1429,7 @@
 				  <h2>Title<br><span>Subtitle</span></h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				  <span class="price">$100.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
 				</div>
@@ -1448,7 +1453,7 @@
 				  <h2>Title<br><span>Subtitle</span></h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				  <span class="price">$250.00</span>
-				<button class="add-cart-btn">Add to Cart</button>
+				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 				</div>
 			  </div>
@@ -1461,29 +1466,155 @@
 	<div class="modal-dialog modal-lg" role="document">
 	  <div class="modal-content">
 		<div class="modal-header">
-		  <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+		  <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-shopping-cart"></i> Cart</h5>
 		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 			<span aria-hidden="true">&times;</span>
 		  </button>
 		</div>
 		<div class="modal-body">
-		  <table class="show-cart table">
-			
-		  </table>
-		  <div>Total price: $<span class="total-cart"></span></div>
-		</div>
-		<div class="modal-footer">
-		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-		  <button type="button" class="btn btn-primary">Order now</button>
-		</div>
-	  </div>
-	</div>
-  </div>
+			<div class="omrs-input-group">
+			  <label class="omrs-input-underlined">
+				<input type="text" id="name" name="name" required>
+				<span class="omrs-input-label">NAME</span>
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/></svg>
+			  </label>
+			</div>
+			<div class="omrs-input-group">
+			  <label class="omrs-input-underlined">
+				<input type="text" id="address" name="address" required>
+				<span class="omrs-input-label">ADDRESS</span>
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/></svg>
+			  </label>
+			</div>
+			<div class="omrs-input-group">
+			  <label class="omrs-input-underlined">
+				<input type="text" id="contact" name="contact" required>
+				<span class="omrs-input-label">CONTACT NUMBER</span>
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/></svg>
+			  </label>
+			</div>
+			<div class="omrs-input-group">
+			  <label class="omrs-input-underlined">
+				<input type="email" id="email" name="email" required>
+				<span class="omrs-input-label">EMAIL ADDRESS</span>
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/></svg>
+			  </label>
+			</div>	
+			<button class="mode-payment"onclick="openPopupzz()">Mode of Payment</button>
+				
+			<div id="popup-container" class="popup-container">
+			  <div id="popup" class="popup">
+				<span class="close-button" onclick="closePopupzz()">&times;</span>
+				<h3>Select Mode of Payment:</h3>
+				<div class="wrapperzz">
+				<input type="radio" name="payment" value="gcash" id="option-1" onclick="showPaymentForm('gcash')"> 
+				<input type="radio" name="payment" value="paypal" id="option-2" onclick="showPaymentForm('paypal')"> 
+				<input type="radio" name="payment" value="paymaya" id="option-3" onclick="showPaymentForm('paymaya')"> 
+				<input type="radio" name="payment" value="credit-card" id="option-4" onclick="showPaymentForm('credit-card')"> 
+				<input type="radio" name="payment" value="debit-card" id="option-5" onclick="showPaymentForm('debit-card')"> 
+				<label for="option-1" class="option option-1">
+					<div class="dot"></div>
+					<span>GCASH</span>
+				  </label>
+				  <label for="option-2" class="option option-2">
+					<div class="dot"></div>
+					<span>PAYPAL</span>
+				  </label>
+				  <label for="option-3" class="option option-3">
+					<div class="dot"></div>
+					<span>PAYMAYA</span>
+				  </label>
+				  <label for="option-4" class="option option-4">
+					<div class="dot"></div>
+					<span>CREDIT</span>
+				  </label>
+				  <label for="option-5" class="option option-5">
+					<div class="dot"></div>
+					<span>DEBIT</span>
+				  </label>
+				  </div>
+				<form id="gcash-form" class="payment-form">
+				  <h4>Gcash Information</h4>
+				  <div class="form__group">
+					<input type="text" class="form__input" id="name" placeholder="Full name" required="" />
+					<label for="name" class="form__label">Full Name</label>
+				  </div>
+				  <div class="form__group">
+					<input type="text" class="form__input" id="name" placeholder="Contact Number" required="" />
+					<label for="name" class="form__label">Contact Number</label>
+				  </div>
+				</form>
+		  
+				<form id="paypal-form" class="payment-form">
+				  <h4>Paypal Information</h4>
+				  <div class="form__group">
+					<input type="text" class="form__input" id="name" placeholder="Full name" required="" />
+					<label for="name" class="form__label">Full Name</label>
+				  </div>
+				  <div class="form__group">
+					<input type="text" class="form__input" id="name" placeholder="Username/Email/Contact Number" required="" />
+					<label for="name" class="form__label">Username/Email/Contact Number</label>
+				  </div>
+				</form>
+		  
+				<form id="paymaya-form" class="payment-form">
+				  <h4>Paymaya Information</h4>
+				  <div class="form__group">
+					<input type="text" class="form__input" id="name" placeholder="Full name" required="" />
+					<label for="name" class="form__label">Full Name</label>
+				  </div>
+				  <div class="form__group">
+					<input type="text" class="form__input" id="name" placeholder="Contact Number" required="" />
+					<label for="name" class="form__label">Contact Number</label>
+				  </div>
+				</form>
+		  
+				<form id="credit-card-form" class="payment-form">
+				  <h4>Credit Card Information</h4>
+				  <div class="form__group">
+					<input type="text" class="form__input" id="name" placeholder="Full name" required="" />
+					<label for="name" class="form__label">Full Name</label>
+				  </div>
+				  <div class="form__group">
+					<input type="text" class="form__input" id="name" placeholder="ATM Number" required="" />
+					<label for="name" class="form__label">ATM Number</label>
+				  </div>
+				</form>
+		  
+				<form id="debit-card-form" class="payment-form">
+				  <h4>Debit Card Information</h4>
+				  <div class="form__group">
+					<input type="text" class="form__input" id="name" placeholder="Full name" required="" />
+					<label for="name" class="form__label">Full Name</label>
+				  </div>
+				  <div class="form__group">
+					<input type="text" class="form__input" id="name" placeholder="ATM Number" required="" />
+					<label for="name" class="form__label">ATM Number</label>
+				  </div>
+				</form>
+
+				<button class="ok-button" onclick="closePopupzz()">OK</button>
+			  </div>
+			</div>
+		  
+			<table class="show-cart table">
+			  <!-- Table content -->
+			</table>
+			<h5>Tax: 12%</h5>
+			<div style="font-size: 35px;">Total price: ₱<span class="total-cart"></span></div>
+		  </div>
+		  <div class="modal-footer">
+			<div class="block"><button class="button success" type="submit" onclick="validateAndAnimate(event)">CHECKOUT</button></div>
+		  </div>
+		  </div></div></div>
+		  
 <footer>
 		<p>&copy; 2023 Art Fusion. All rights reserved.</p>
 	</footer>
 </body>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
 <script src="javascript/myscripts.js" charset="UTF-8"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
