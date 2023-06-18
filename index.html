@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 	<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/860cc6d986.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <!--Navigation Buttons-->
@@ -20,7 +21,7 @@
 		</div>
 		<div class="navigation">
 			<ul class="menu">
-			  <div class="close-btn"></div>
+			  <div class="close-btnzx"></div>
 			  <li class="menu-item"><a href= "#">Home</a></li>
 			  <li class="menu-item"><a href="#featured">Featured</a></li>
 			  <li class="menu-item">
@@ -52,13 +53,11 @@
 										<div class="cart-btn">
 				  							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">
 												<i class="fa fa-shopping-basket" aria-hidden="true"></i><span class="total-count"></span></button><button class="clear-cart btn btn-danger" id="clearcart">Clear Cart</button></div>
-			</div></li>
-			<form action="" class="serts">
-				<input 	class="searchbar" type="search" required>
-				<i class="fa fa-search" id="searchicon"></i>
-			  </form>
+			
+											</div></li>
 			</ul>
 		  </div>
+		  <div class="menu-btn"></div>
 		</header>
 	  <!--Image Slideshow-->
 	  <section id="home">
@@ -128,23 +127,30 @@
 <section  id="featured" style="background: linear-gradient(to bottom, cyan, white); padding-top: 10px;">
 	<h2 class="section-title">Featured Artworks</h2>
 	<div class="container">
+
 		<div class="product">
 		  <div class="product-card">
-			<h2 class="name">Title1</h2>
-			<span class="price">$120.00</span>
+			<h2 class="name">Elephant</h2>
+			<span class="price">$35.00</span>
 			<a class="popup-btn">Quick View</a>
-			<img src="images/1.jpg" class="product-img" alt="">
+			<img src="images/Elephant.png" class="product-img" alt="">
 		  </div>
 		  <div class="popup-view">
 			<div class="popup-card">
 				<a><i class="fas fa-times close-btn"></i></a>
 			  <div class="product-img">
-				<img src="images/1.jpg" alt="">
+				<img src="images/Elephant.png" alt="">
 			  </div>
 			  <div class="info">
-				<h2>Title1<br><span>Subtitle1</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<span class="price">$120.00</span>
+				<h2> Elephant <br><span> Made With BlockBench</span></h2>
+				<p> Introducing the magnificent 3D Elephant, meticulously crafted using BlockBench! This awe-inspiring sculpture captures the grace and power of the majestic elephant, bringing it to life in three-dimensional form.
+
+					Crafted with intricate attention to detail, this 3D Elephant showcases the strength of BlockBench's design capabilities. Every contour, curve, and feature of the elephant has been meticulously modeled, resulting in a stunningly realistic representation.
+					
+					Made with high-quality materials, this 3D Elephant is a true masterpiece. Its solid construction ensures durability, while the intricate design adds a touch of elegance to any space. Whether displayed in a living room, office, or art gallery, it becomes an instant focal point, captivating all who behold it.
+					
+					The 3D Elephant serves as a symbol of strength, wisdom, and grace, making it a perfect addition to any decor or a thoughtful gift for animal lovers and art enthusiasts alike. Its presence exudes a sense of majesty and wonder, elevating the ambiance of any environment. </p>
+				<span class="price">$35.00</span>
 				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 			  </div>
@@ -153,21 +159,23 @@
 		</div>
 		<div class="product">
 		  <div class="product-card">
-			<h2 class="name">Title2</h2>
-			<span class="price">$100.00</span>
+			<h2 class="name">Pixel Kaido Painting </h2>
+			<span class="price">$30.00</span>
 			<a class="popup-btn">Quick View</a>
-			<img src="images/1.jpg" class="product-img" alt="">
+			<img src="images/Kaido123.png" class="product-img" alt="">
 		  </div>
 		  <div class="popup-view">
 			<div class="popup-card">
 			  <a><i class="fas fa-times close-btn"></i></a>
 			  <div class="product-img">
-				<img src="images/1.jpg" alt="">
+				<img src="images/Kaido123.png" alt="">
 			  </div>
 			  <div class="info">
-				<h2>Title<br><span>Subtitle1</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<span class="price">$100.00</span>
+				<h2> Kaido <br><span> Made with Aseprite </span></h2>
+				<p>Introducing the 2D pixelated Kaido painting, a unique artwork combining pixel art and the iconic character from anime and gaming.
+					The pixelated rendition adds a fresh and nostalgic twist, showcasing Kaido's imposing figure and intricate design with carefully placed pixels.
+					Crafted with precision by skilled artists, the painting captures Kaido's essence through meticulous pixel placement and artistic flair, creating a stunning portrayal.</p>
+				<span class="price">$30.00</span>
 				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
@@ -177,21 +185,23 @@
 		</div>
 		<div class="product">
 		  <div class="product-card">
-			<h2 class="name">Title3</h2>
-			<span class="price">$250.00</span>
+			<h2 class="name"> Svoji Cutie </h2>
+			<span class="price">$21.00</span>
 			<a class="popup-btn">Quick View</a>
-			<img src="images/1.jpg" class="product-img" alt="">
+			<img src="images/Svoji Cutie.png" class="product-img" alt="">
 		  </div>
 		  <div class="popup-view">
 			<div class="popup-card">
 			  <a><i class="fas fa-times close-btn"></i></a>
 			  <div class="product-img">
-				<img src="images/1.jpg" alt="">
+				<img src="images/Svoji Cutie.png" alt="">
 			  </div>
 			  <div class="info">
-				<h2>Title<br><span>Subtitle</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<span class="price">$250.00</span>
+				<h2> Svoji Cutie <br><span> Made With Aseprite </span></h2>
+				<p>	Introducing a captivating 2D pixelated character that brings nostalgia and charm to life.
+					Meticulously crafted with intricate detailing and vibrant colors, capturing the essence of its design and personality.
+					Created by skilled artists, the pixelated character stands out with its unique attributes, igniting curiosity and sparking imagination. </p>
+				<span class="price">$21.00</span>
 				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
@@ -201,21 +211,23 @@
 		</div>
 		<div class="product">
 			<div class="product-card">
-			  <h2 class="name">Title4</h2>
-			  <span class="price">$120.00</span>
+			  <h2 class="name">3D BAT</h2>
+			  <span class="price">$20.00</span>
 			  <a class="popup-btn">Quick View</a>
-			  <img src="images/1.jpg" class="product-img" alt="">
+			  <img src="images/batfat.png" class="product-img" alt="">
 			</div>
 			<div class="popup-view">
 			  <div class="popup-card">
 				<a><i class="fas fa-times close-btn"></i></a>
 				<div class="product-img">
-				  <img src="images/1.jpg" alt="">
+				  <img src="images/batfat.png" alt="">
 				</div>
 				<div class="info">
-				  <h2>Title<br><span>Subtitle</span></h2>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				  <span class="price">$120.00</span>
+				  <h2> 3D BAT <br><span> made with Block Bench </span></h2>
+				  <p> Introducing an extraordinary 3D artwork created with Blockbench, pushing the boundaries of creativity and visual expression.
+					Meticulously crafted with attention to detail, showcasing the precision and skill of the creator in creating a realistic representation.
+					Made with high-quality materials, the artwork combines durability with intricate design, making it a captivating focal point in any setting. </p>
+				  <span class="price">$20.00</span>
 				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 				</div>
@@ -224,21 +236,23 @@
 		  </div>
 		  <div class="product">
 			<div class="product-card">
-			  <h2 class="name">Title5</h2>
-			  <span class="price">$100.00</span>
+			  <h2 class="name">3D Shiba Dog</h2>
+			  <span class="price">$15.00</span>
 			  <a class="popup-btn">Quick View</a>
-			  <img src="images/1.jpg" class="product-img" alt="">
+			  <img src="images/shiba.png" class="product-img" alt="">
 			</div>
 			<div class="popup-view">
 			  <div class="popup-card">
 				<a><i class="fas fa-times close-btn"></i></a>
 				<div class="product-img">
-				  <img src="images/1.jpg" alt="">
+				  <img src="images/shiba.png" alt="">
 				</div>
 				<div class="info">
-				  <h2>Title<br><span>Subtitle</span></h2>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				  <span class="price">$100.00</span>
+				  <h2> 3D Shiba <br><span> Made With Block Bench</span></h2>
+				  <p> Introducing an extraordinary 3D artwork created with Blockbench, pushing the boundaries of creativity and visual expression.
+					Meticulously crafted with attention to detail, showcasing the precision and skill of the creator in creating a realistic representation.
+					Made with high-quality materials, the artwork combines durability with intricate design, making it a captivating focal point in any setting. </p>
+				  <span class="price">$15.00</span>
 				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 				</div>
@@ -247,21 +261,23 @@
 		  </div>
 		  <div class="product">
 			<div class="product-card">
-			  <h2 class="name">Title6</h2>
-			  <span class="price">$250.00</span>
+			  <h2 class="name"> Mona-Lisa</h2>
+			  <span class="price">$15.00</span>
 			  <a class="popup-btn">Quick View</a>
-			  <img src="images/1.jpg" class="product-img" alt="">
+			  <img src="images/Mona na may Lisa.png" class="product-img" alt="">
 			</div>
 			<div class="popup-view">
 			  <div class="popup-card">
 				<a><i class="fas fa-times close-btn"></i></a>
 				<div class="product-img">
-				  <img src="images/1.jpg" alt="">
+				  <img src="images/Mona na may Lisa.png" alt="">
 				</div>
 				<div class="info">
-				  <h2>Title<br><span>Subtitle</span></h2>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				  <span class="price">$250.00</span>
+				  <h2> Mona-Lisa <br><span> Made With Aseprite </span></h2>
+				  <p> Introducing a captivating 2D pixelated character that brings nostalgia and charm to life.
+					Meticulously crafted with intricate detailing and vibrant colors, capturing the essence of its design and personality.
+					Created by skilled artists, the pixelated character stands out with its unique attributes, igniting curiosity and sparking imagination. </p>
+				  <span class="price">$15.00</span>
 				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 				</div>
@@ -277,20 +293,22 @@
 	<div class="container">
 		<div class="product">
 		  <div class="product-card">
-			<h2 class="name">Title1</h2>
-			<span class="price">$120.00</span>
+			<h2 class="name"> Buntis na Bowser </h2>
+			<span class="price">$60.00</span>
 			<a class="popup-btn">Quick View</a>
-			<img src="images/1.jpg" class="product-img" alt="">
+			<img src="images/bowser.png" class="product-img" alt="">
 		  </div>
 		  <div class="popup-view">
 			<div class="popup-card">
 			  <a><i class="fas fa-times close-btn"></i></a>
 			  <div class="product-img">
-				<img src="images/1.jpg" alt="">
+				<img src="images/bowser.png" alt="">
 			  </div>
 			  <div class="info">
-				<h2>Title1<br><span>Subtitle1</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<h2> Buntis na Bowser <br><span> Made With Aseprite</span></h2>
+				<p> Introducing a captivating 2D pixelated character that brings nostalgia and charm to life.
+					Meticulously crafted with intricate detailing and vibrant colors, capturing the essence of its design and personality.
+					Created by skilled artists, the pixelated character stands out with its unique attributes, igniting curiosity and sparking imagination. </p>
 				<span class="price">$120.00</span>
 				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
@@ -301,21 +319,23 @@
 		</div>
 		<div class="product">
 		  <div class="product-card">
-			<h2 class="name">Title2</h2>
-			<span class="price">$100.00</span>
+			<h2 class="name"> ISang Mata na Baliw na may hawak na Kambing </h2>
+			<span class="price">$55.00</span>
 			<a class="popup-btn">Quick View</a>
-			<img src="images/1.jpg" class="product-img" alt="">
+			<img src="images/Baliw na may Kambing.png" class="product-img" alt="">
 		  </div>
 		  <div class="popup-view">
 			<div class="popup-card">
 			  <a><i class="fas fa-times close-btn"></i></a>
 			  <div class="product-img">
-				<img src="images/1.jpg" alt="">
+				<img src="images/Baliw na may Kambing.png" alt="">
 			  </div>
 			  <div class="info">
-				<h2>Title<br><span>Subtitle1</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<span class="price">$100.00</span>
+				<h2> Isang Matang Baliw na may hawak na Kambing <br><span> Made With Aseprite </span></h2>
+				<p> Introducing a captivating 2D pixelated character that brings nostalgia and charm to life.
+					Meticulously crafted with intricate detailing and vibrant colors, capturing the essence of its design and personality.
+					Created by skilled artists, the pixelated character stands out with its unique attributes, igniting curiosity and sparking imagination. </p>
+				<span class="price">$55.00</span>
 				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
@@ -325,21 +345,23 @@
 		</div>
 		<div class="product">
 		  <div class="product-card">
-			<h2 class="name">Title3</h2>
-			<span class="price">$250.00</span>
+			<h2 class="name"> Mona na may Lisa </h2>
+			<span class="price">$50.00</span>
 			<a class="popup-btn">Quick View</a>
-			<img src="images/1.jpg" class="product-img" alt="">
+			<img src="images/Mona na may Lisa.png" class="product-img" alt="">
 		  </div>
 		  <div class="popup-view">
 			<div class="popup-card">
 			  <a><i class="fas fa-times close-btn"></i></a>
 			  <div class="product-img">
-				<img src="images/1.jpg" alt="">
+				<img src="images/Mona na may Lisa.png" alt="">
 			  </div>
 			  <div class="info">
-				<h2>Title<br><span>Subtitle</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<span class="price">$250.00</span>
+				<h2> Mona na May Lisa <br><span> Made With Aseprite </span></h2>
+				<p> Introducing a captivating 2D pixelated character that brings nostalgia and charm to life.
+					Meticulously crafted with intricate detailing and vibrant colors, capturing the essence of its design and personality.
+					Created by skilled artists, the pixelated character stands out with its unique attributes, igniting curiosity and sparking imagination. </p>
+				<span class="price">$50.00</span>
 				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
@@ -349,21 +371,23 @@
 		</div>
 		<div class="product">
 			<div class="product-card">
-			  <h2 class="name">Title4</h2>
-			  <span class="price">$120.00</span>
+			  <h2 class="name"> Bocchi daw Amp </h2>
+			  <span class="price">$44.00</span>
 			  <a class="popup-btn">Quick View</a>
-			  <img src="images/1.jpg" class="product-img" alt="">
+			  <img src="images/Bocchifinal.png" class="product-img" alt="">
 			</div>
 			<div class="popup-view">
 			  <div class="popup-card">
 				<a><i class="fas fa-times close-btn"></i></a>
 				<div class="product-img">
-				  <img src="images/1.jpg" alt="">
+				  <img src="images/Bocchifinal.png" alt="">
 				</div>
 				<div class="info">
-				  <h2>Title<br><span>Subtitle</span></h2>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				  <span class="price">$120.00</span>
+				  <h2> Bocchi Trash <br><span> Made With Aseprite </span></h2>
+				  <p> Introducing a captivating 2D pixelated character that brings nostalgia and charm to life.
+					Meticulously crafted with intricate detailing and vibrant colors, capturing the essence of its design and personality.
+					Created by skilled artists, the pixelated character stands out with its unique attributes, igniting curiosity and sparking imagination. </p>
+				  <span class="price">$44.00</span>
 				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 				</div>
@@ -372,21 +396,23 @@
 		  </div>
 		  <div class="product">
 			<div class="product-card">
-			  <h2 class="name">Title5</h2>
-			  <span class="price">$100.00</span>
+			  <h2 class="name"> SANJI HAHAHA </h2>
+			  <span class="price">$40.00</span>
 			  <a class="popup-btn">Quick View</a>
-			  <img src="images/1.jpg" class="product-img" alt="">
+			  <img src="images/Pagod na Sanji.png" class="product-img" alt="">
 			</div>
 			<div class="popup-view">
 			  <div class="popup-card">
 				<a><i class="fas fa-times close-btn"></i></a>
 				<div class="product-img">
-				  <img src="images/1.jpg" alt="">
+				  <img src="images/Pagod na Sanji.png" alt="">
 				</div>
 				<div class="info">
-				  <h2>Title<br><span>Subtitle</span></h2>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				  <span class="price">$100.00</span>
+				  <h2> Sanji Sptire <br><span> Made With Aseprite </span></h2>
+				  <p> Introducing a captivating 2D pixelated character that brings nostalgia and charm to life.
+					Meticulously crafted with intricate detailing and vibrant colors, capturing the essence of its design and personality.
+					Created by skilled artists, the pixelated character stands out with its unique attributes, igniting curiosity and sparking imagination. </p>
+				  <span class="price">$40.00</span>
 				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 				</div>
@@ -395,21 +421,23 @@
 		  </div>
 		  <div class="product">
 			<div class="product-card">
-			  <h2 class="name">Title6</h2>
-			  <span class="price">$250.00</span>
+			  <h2 class="name"> Svoji </h2>
+			  <span class="price">$21.00</span>
 			  <a class="popup-btn">Quick View</a>
-			  <img src="images/1.jpg" class="product-img" alt="">
+			  <img src="images/Svoji Cutie.png" class="product-img" alt="">
 			</div>
 			<div class="popup-view">
 			  <div class="popup-card">
 				<a><i class="fas fa-times close-btn"></i></a>
 				<div class="product-img">
-				  <img src="images/1.jpg" alt="">
+				  <img src="images/Svoji Cutie.png" alt="">
 				</div>
 				<div class="info">
-				  <h2>Title<br><span>Subtitle</span></h2>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				  <span class="price">$250.00</span>
+				  <h2> Svoji Sprite <br><span> Made with Aseprite </span></h2>
+				  <p> Introducing a captivating 2D pixelated character that brings nostalgia and charm to life.
+					Meticulously crafted with intricate detailing and vibrant colors, capturing the essence of its design and personality.
+					Created by skilled artists, the pixelated character stands out with its unique attributes, igniting curiosity and sparking imagination. </p>
+				  <span class="price">$21.00</span>
 				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 				</div>
@@ -425,21 +453,23 @@
 	<div class="container">
 		<div class="product">
 		  <div class="product-card">
-			<h2 class="name">Title1</h2>
-			<span class="price">$120.00</span>
+			<h2 class="name"> Couple Nature Phone Wallpaper Girl Version </h2>
+			<span class="price">$60.00</span>
 			<a class="popup-btn">Quick View</a>
-			<img src="images/1.jpg" class="product-img" alt="">
+			<img src="images/Girl final.png" class="product-img" alt="">
 		  </div>
 		  <div class="popup-view">
 			<div class="popup-card">
 			  <a><i class="fas fa-times close-btn"></i></a>
 			  <div class="product-img">
-				<img src="images/1.jpg" alt="">
+				<img src="images/Girl final.png" alt="">
 			  </div>
 			  <div class="info">
-				<h2>Title1<br><span>Subtitle1</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<span class="price">$120.00</span>
+				<h2> Couple Nature Phone Wallpaper Girl Version <br><span> Made With Aseprite </span></h2>
+				<p> Introducing a captivating 2D pixelated character that brings nostalgia and charm to life.
+					Meticulously crafted with intricate detailing and vibrant colors, capturing the essence of its design and personality.
+					Created by skilled artists, the pixelated character stands out with its unique attributes, igniting curiosity and sparking imagination. </p>
+				<span class="price">$60.00</span>
 				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
@@ -449,20 +479,22 @@
 		</div>
 		<div class="product">
 		  <div class="product-card">
-			<h2 class="name">Title2</h2>
-			<span class="price">$100.00</span>
+			<h2 class="name"> Couple Nature Phone Wallpaper Boy Version </h2>
+			<span class="price">$60.00</span>
 			<a class="popup-btn">Quick View</a>
-			<img src="images/1.jpg" class="product-img" alt="">
+			<img src="images/Boy final.png" class="product-img" alt="">
 		  </div>
 		  <div class="popup-view">
 			<div class="popup-card">
 			  <a><i class="fas fa-times close-btn"></i></a>
 			  <div class="product-img">
-				<img src="images/1.jpg" alt="">
+				<img src="images/Boy final.png" alt="">
 			  </div>
 			  <div class="info">
-				<h2>Title<br><span>Subtitle1</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<h2> Couple Nature Phone Wallpaper Boy Version <br><span> Made With Aseprite </span></h2>
+				<p> Introducing a captivating 2D pixelated character that brings nostalgia and charm to life.
+					Meticulously crafted with intricate detailing and vibrant colors, capturing the essence of its design and personality.
+					Created by skilled artists, the pixelated character stands out with its unique attributes, igniting curiosity and sparking imagination. </p>
 				<span class="price">$100.00</span>
 				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
@@ -473,21 +505,23 @@
 		</div>
 		<div class="product">
 		  <div class="product-card">
-			<h2 class="name">Title3</h2>
-			<span class="price">$250.00</span>
+			<h2 class="name"> Mountain Falls </h2>
+			<span class="price">$50.00</span>
 			<a class="popup-btn">Quick View</a>
-			<img src="images/1.jpg" class="product-img" alt="">
+			<img src="images/Falls na may bundok.png" class="product-img" alt="">
 		  </div>
 		  <div class="popup-view">
 			<div class="popup-card">
 			  <a><i class="fas fa-times close-btn"></i></a>
 			  <div class="product-img">
-				<img src="images/1.jpg" alt="">
+				<img src="images/Falls na may bundok.png" alt="">
 			  </div>
 			  <div class="info">
-				<h2>Title<br><span>Subtitle</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<span class="price">$250.00</span>
+				<h2> Mountain Falls <br><span> Made With Aseprite </span></h2>
+				<p> Introducing a captivating 2D pixelated character that brings nostalgia and charm to life.
+					Meticulously crafted with intricate detailing and vibrant colors, capturing the essence of its design and personality.
+					Created by skilled artists, the pixelated character stands out with its unique attributes, igniting curiosity and sparking imagination. </p>
+				<span class="price">$50.00</span>
 				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
@@ -497,21 +531,23 @@
 		</div>
 		<div class="product">
 			<div class="product-card">
-			  <h2 class="name">Title4</h2>
-			  <span class="price">$120.00</span>
+			  <h2 class="name"> Beach Sunset </h2>
+			  <span class="price">$45.00</span>
 			  <a class="popup-btn">Quick View</a>
-			  <img src="images/1.jpg" class="product-img" alt="">
+			  <img src="images/beach.png" class="product-img" alt="">
 			</div>
 			<div class="popup-view">
 			  <div class="popup-card">
 				<a><i class="fas fa-times close-btn"></i></a>
 				<div class="product-img">
-				  <img src="images/1.jpg" alt="">
+				  <img src="images/beach.png" alt="">
 				</div>
 				<div class="info">
-				  <h2>Title<br><span>Subtitle</span></h2>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				  <span class="price">$120.00</span>
+				  <h2> Beach Sunset <br><span> Made With Aseprite </span></h2>
+				  <p> Introducing a captivating 2D pixelated character that brings nostalgia and charm to life.
+					Meticulously crafted with intricate detailing and vibrant colors, capturing the essence of its design and personality.
+					Created by skilled artists, the pixelated character stands out with its unique attributes, igniting curiosity and sparking imagination. </p>
+				  <span class="price">$45.00</span>
 				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 				  
@@ -521,21 +557,23 @@
 		  </div>
 		  <div class="product">
 			<div class="product-card">
-			  <h2 class="name">Title5</h2>
-			  <span class="price">$100.00</span>
+			  <h2 class="name"> Starry Night </h2>
+			  <span class="price">$40.00</span>
 			  <a class="popup-btn">Quick View</a>
-			  <img src="images/1.jpg" class="product-img" alt="">
+			  <img src="images/Sylvester sleeping.gif" class="product-img" alt="">
 			</div>
 			<div class="popup-view">
 			  <div class="popup-card">
 				<a><i class="fas fa-times close-btn"></i></a>
 				<div class="product-img">
-				  <img src="images/1.jpg" alt="">
+				  <img src="images/Sylvester sleeping.gif" alt="">
 				</div>
 				<div class="info">
-				  <h2>Title<br><span>Subtitle</span></h2>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				  <span class="price">$100.00</span>
+				  <h2> Starry Night <br><span> Made With Aseprite </span></h2>
+				  <p> Introducing a captivating 2D pixelated character that brings nostalgia and charm to life.
+					Meticulously crafted with intricate detailing and vibrant colors, capturing the essence of its design and personality.
+					Created by skilled artists, the pixelated character stands out with its unique attributes, igniting curiosity and sparking imagination. </p>
+				  <span class="price">$40.00</span>
 				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 				
@@ -545,21 +583,23 @@
 		  </div>
 		  <div class="product">
 			<div class="product-card">
-			  <h2 class="name">Title6</h2>
-			  <span class="price">$250.00</span>
+			  <h2 class="name"> Coconut Island </h2>
+			  <span class="price">$30.00</span>
 			  <a class="popup-btn">Quick View</a>
-			  <img src="images/1.jpg" class="product-img" alt="">
+			  <img src="images/Island.png" class="product-img" alt="">
 			</div>
 			<div class="popup-view">
 			  <div class="popup-card">
 				<a><i class="fas fa-times close-btn"></i></a>
 				<div class="product-img">
-				  <img src="images/1.jpg" alt="">
+				  <img src="images/Island.png" alt="">
 				</div>
 				<div class="info">
-				  <h2>Title<br><span>Subtitle</span></h2>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				  <span class="price">$250.00</span>
+				  <h2> Coconut Island <br><span> Made With Aseprite</span></h2>
+				  <p> Introducing a captivating 2D pixelated character that brings nostalgia and charm to life.
+					Meticulously crafted with intricate detailing and vibrant colors, capturing the essence of its design and personality.
+					Created by skilled artists, the pixelated character stands out with its unique attributes, igniting curiosity and sparking imagination. </p>
+				  <span class="price">$30.00</span>
 				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 				  
@@ -576,21 +616,23 @@
 	<div class="container">
 		<div class="product">
 		  <div class="product-card">
-			<h2 class="name">Title1</h2>
-			<span class="price">$120.00</span>
+			<h2 class="name"> Bow </h2>
+			<span class="price">$20.00</span>
 			<a class="popup-btn">Quick View</a>
-			<img src="images/1.jpg" class="product-img" alt="">
+			<img src="images/Bow.png" class="product-img" alt="">
 		  </div>
 		  <div class="popup-view">
 			<div class="popup-card">
 			  <a><i class="fas fa-times close-btn"></i></a>
 			  <div class="product-img">
-				<img src="images/1.jpg" alt="">
+				<img src="images/Bow.png" alt="">
 			  </div>
 			  <div class="info">
-				<h2>Title1<br><span>Subtitle1</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<span class="price">$120.00</span>
+				<h2> Bow Sprite <br><span> Made with Aseprite </span></h2>
+				<p> Introducing a captivating 2D pixelated character that brings nostalgia and charm to life.
+					Meticulously crafted with intricate detailing and vibrant colors, capturing the essence of its design and personality.
+					Created by skilled artists, the pixelated character stands out with its unique attributes, igniting curiosity and sparking imagination. </p>
+				<span class="price">$20.00</span>
 				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
@@ -600,21 +642,23 @@
 		</div>
 		<div class="product">
 		  <div class="product-card">
-			<h2 class="name">Title2</h2>
-			<span class="price">$100.00</span>
+			<h2 class="name"> Paladins Weapon </h2>
+			<span class="price">$20.00</span>
 			<a class="popup-btn">Quick View</a>
-			<img src="images/1.jpg" class="product-img" alt="">
+			<img src="images/Paladins Weapon.png" class="product-img" alt="">
 		  </div>
 		  <div class="popup-view">
 			<div class="popup-card">
 			  <a><i class="fas fa-times close-btn"></i></a>
 			  <div class="product-img">
-				<img src="images/1.jpg" alt="">
+				<img src="images/Paladins Weapon.png" alt="">
 			  </div>
 			  <div class="info">
-				<h2>Title<br><span>Subtitle1</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<span class="price">$100.00</span>
+				<h2> Paladins Weapon Sprite<br><span> Made With Aseprite</span></h2>
+				<p> Introducing a captivating 2D pixelated character that brings nostalgia and charm to life.
+					Meticulously crafted with intricate detailing and vibrant colors, capturing the essence of its design and personality.
+					Created by skilled artists, the pixelated character stands out with its unique attributes, igniting curiosity and sparking imagination. </p>
+				<span class="price">$20.00</span>
 				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
@@ -624,20 +668,22 @@
 		</div>
 		<div class="product">
 		  <div class="product-card">
-			<h2 class="name">Title3</h2>
-			<span class="price">$250.00</span>
+			<h2 class="name"> Spear </h2>
+			<span class="price">$20.00</span>
 			<a class="popup-btn">Quick View</a>
-			<img src="images/1.jpg" class="product-img" alt="">
+			<img src="images/Spear.png" class="product-img" alt="">
 		  </div>
 		  <div class="popup-view">
 			<div class="popup-card">
 			  <a><i class="fas fa-times close-btn"></i></a>
 			  <div class="product-img">
-				<img src="images/1.jpg" alt="">
+				<img src="images/Spear.png" alt="">
 			  </div>
 			  <div class="info">
-				<h2>Title<br><span>Subtitle</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<h2> Spear Sprite <br><span> Made With Aseprite </span></h2>
+				<p> Introducing a captivating 2D pixelated character that brings nostalgia and charm to life.
+					Meticulously crafted with intricate detailing and vibrant colors, capturing the essence of its design and personality.
+					Created by skilled artists, the pixelated character stands out with its unique attributes, igniting curiosity and sparking imagination. </p>
 				<span class="price">$250.00</span>
 				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
@@ -648,21 +694,23 @@
 		</div>
 		<div class="product">
 			<div class="product-card">
-			  <h2 class="name">Title4</h2>
-			  <span class="price">$120.00</span>
+			  <h2 class="name"> Sword </h2>
+			  <span class="price">$20.00</span>
 			  <a class="popup-btn">Quick View</a>
-			  <img src="images/1.jpg" class="product-img" alt="">
+			  <img src="images/Sword.png" class="product-img" alt="">
 			</div>
 			<div class="popup-view">
 			  <div class="popup-card">
 				<a><i class="fas fa-times close-btn"></i></a>
 				<div class="product-img">
-				  <img src="images/1.jpg" alt="">
+				  <img src="images/Sword.png" alt="">
 				</div>
 				<div class="info">
-				  <h2>Title<br><span>Subtitle</span></h2>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				  <span class="price">$120.00</span>
+				  <h2> Sword Sprite <br><span> Made With Aseprite </span></h2>
+				  <p> Introducing a captivating 2D pixelated character that brings nostalgia and charm to life.
+					Meticulously crafted with intricate detailing and vibrant colors, capturing the essence of its design and personality.
+					Created by skilled artists, the pixelated character stands out with its unique attributes, igniting curiosity and sparking imagination. </p>
+				  <span class="price">$20.00</span>
 				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
@@ -672,21 +720,23 @@
 		  </div>
 		  <div class="product">
 			<div class="product-card">
-			  <h2 class="name">Title5</h2>
-			  <span class="price">$100.00</span>
+			  <h2 class="name"> WarAxe </h2>
+			  <span class="price">$20.00</span>
 			  <a class="popup-btn">Quick View</a>
-			  <img src="images/1.jpg" class="product-img" alt="">
+			  <img src="images/WarAxe.png" class="product-img" alt="">
 			</div>
 			<div class="popup-view">
 			  <div class="popup-card">
 				<a><i class="fas fa-times close-btn"></i></a>
 				<div class="product-img">
-				  <img src="images/1.jpg" alt="">
+				  <img src="images/WarAxe.png" alt="">
 				</div>
 				<div class="info">
-				  <h2>Title<br><span>Subtitle</span></h2>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				  <span class="price">$100.00</span>
+				  <h2> WarAxe Sprite<br><span> Made With Aseprite </span></h2>
+				  <p> Introducing a captivating 2D pixelated character that brings nostalgia and charm to life.
+					Meticulously crafted with intricate detailing and vibrant colors, capturing the essence of its design and personality.
+					Created by skilled artists, the pixelated character stands out with its unique attributes, igniting curiosity and sparking imagination. </p>
+				  <span class="price">$20.00</span>
 				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
@@ -696,20 +746,22 @@
 		  </div>
 		  <div class="product">
 			<div class="product-card">
-			  <h2 class="name">Title6</h2>
-			  <span class="price">$250.00</span>
+			  <h2 class="name"> Staff </h2>
+			  <span class="price">$20.00</span>
 			  <a class="popup-btn">Quick View</a>
-			  <img src="images/1.jpg" class="product-img" alt="">
+			  <img src="images/Normal Staff.png" class="product-img" alt="">
 			</div>
 			<div class="popup-view">
 			  <div class="popup-card">
 				<a><i class="fas fa-times close-btn"></i></a>
 				<div class="product-img">
-				  <img src="images/1.jpg" alt="">
+				  <img src="images/Normal Staff.png" alt="">
 				</div>
 				<div class="info">
-				  <h2>Title<br><span>Subtitle</span></h2>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				  <h2> Staff <br><span> Made With Aseprite </span></h2>
+				  <p> Introducing a captivating 2D pixelated character that brings nostalgia and charm to life.
+					Meticulously crafted with intricate detailing and vibrant colors, capturing the essence of its design and personality.
+					Created by skilled artists, the pixelated character stands out with its unique attributes, igniting curiosity and sparking imagination. </p>
 				  <span class="price">$250.00</span>
 				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
@@ -727,21 +779,23 @@
 	<div class="container">
 		<div class="product">
 		  <div class="product-card">
-			<h2 class="name">Title1</h2>
-			<span class="price">$120.00</span>
+			<h2 class="name"> Bed </h2>
+			<span class="price">$15.00</span>
 			<a class="popup-btn">Quick View</a>
-			<img src="images/1.jpg" class="product-img" alt="">
+			<img src="images/Bed.png" class="product-img" alt="">
 		  </div>
 		  <div class="popup-view">
 			<div class="popup-card">
 			  <a><i class="fas fa-times close-btn"></i></a>
 			  <div class="product-img">
-				<img src="images/1.jpg" alt="">
+				<img src="images/Bed.png" alt="">
 			  </div>
 			  <div class="info">
-				<h2>Title1<br><span>Subtitle1</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<span class="price">$120.00</span>
+				<h2> Bed Sprite <br><span> Made With Aseprite </span></h2>
+				<p> Introducing a captivating 2D pixelated character that brings nostalgia and charm to life.
+					Meticulously crafted with intricate detailing and vibrant colors, capturing the essence of its design and personality.
+					Created by skilled artists, the pixelated character stands out with its unique attributes, igniting curiosity and sparking imagination. </p>
+				<span class="price">$15.00</span>
 				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
@@ -751,21 +805,23 @@
 		</div>
 		<div class="product">
 		  <div class="product-card">
-			<h2 class="name">Title2</h2>
-			<span class="price">$100.00</span>
+			<h2 class="name"> Bench </h2>
+			<span class="price">$15.00</span>
 			<a class="popup-btn">Quick View</a>
-			<img src="images/1.jpg" class="product-img" alt="">
+			<img src="images/Bench.png" class="product-img" alt="">
 		  </div>
 		  <div class="popup-view">
 			<div class="popup-card">
 			  <a><i class="fas fa-times close-btn"></i></a>
 			  <div class="product-img">
-				<img src="images/1.jpg" alt="">
+				<img src="images/Bench.png" alt="">
 			  </div>
 			  <div class="info">
-				<h2>Title<br><span>Subtitle1</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<span class="price">$100.00</span>
+				<h2> Bench Sprite <br><span> Made With Aseprite </span></h2>
+				<p> Introducing a captivating 2D pixelated character that brings nostalgia and charm to life.
+					Meticulously crafted with intricate detailing and vibrant colors, capturing the essence of its design and personality.
+					Created by skilled artists, the pixelated character stands out with its unique attributes, igniting curiosity and sparking imagination. </p>
+				<span class="price">$15.00</span>
 				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
@@ -775,21 +831,23 @@
 		</div>
 		<div class="product">
 		  <div class="product-card">
-			<h2 class="name">Title3</h2>
-			<span class="price">$250.00</span>
+			<h2 class="name"> Cabinet </h2>
+			<span class="price">$15.00</span>
 			<a class="popup-btn">Quick View</a>
-			<img src="images/1.jpg" class="product-img" alt="">
+			<img src="images/Cabinet.png" class="product-img" alt="">
 		  </div>
 		  <div class="popup-view">
 			<div class="popup-card">
 			  <a><i class="fas fa-times close-btn"></i></a>
 			  <div class="product-img">
-				<img src="images/1.jpg" alt="">
+				<img src="images/Cabinet.png" alt="">
 			  </div>
 			  <div class="info">
-				<h2>Title<br><span>Subtitle</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<span class="price">$250.00</span>
+				<h2> Cabinet Sprite <br><span> Made With Aseprite </span></h2>
+				<p> Introducing a captivating 2D pixelated character that brings nostalgia and charm to life.
+					Meticulously crafted with intricate detailing and vibrant colors, capturing the essence of its design and personality.
+					Created by skilled artists, the pixelated character stands out with its unique attributes, igniting curiosity and sparking imagination. </p>
+				<span class="price">$15.00</span>
 				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
@@ -799,21 +857,23 @@
 		</div>
 		<div class="product">
 			<div class="product-card">
-			  <h2 class="name">Title4</h2>
-			  <span class="price">$120.00</span>
+			  <h2 class="name"> Couch </h2>
+			  <span class="price">$15.00</span>
 			  <a class="popup-btn">Quick View</a>
-			  <img src="images/1.jpg" class="product-img" alt="">
+			  <img src="images/Couch.png" class="product-img" alt="">
 			</div>
 			<div class="popup-view">
 			  <div class="popup-card">
 				<a><i class="fas fa-times close-btn"></i></a>
 				<div class="product-img">
-				  <img src="images/1.jpg" alt="">
+				  <img src="images/Couch.png" alt="">
 				</div>
 				<div class="info">
-				  <h2>Title<br><span>Subtitle</span></h2>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				  <span class="price">$120.00</span>
+				  <h2> Couch Sprite <br><span> Made With Aseprite </span></h2>
+				  <p> Introducing a captivating 2D pixelated character that brings nostalgia and charm to life.
+					Meticulously crafted with intricate detailing and vibrant colors, capturing the essence of its design and personality.
+					Created by skilled artists, the pixelated character stands out with its unique attributes, igniting curiosity and sparking imagination.</p>
+				  <span class="price">$15.00</span>
 				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 				</div>
@@ -822,21 +882,23 @@
 		  </div>
 		  <div class="product">
 			<div class="product-card">
-			  <h2 class="name">Title5</h2>
-			  <span class="price">$100.00</span>
+			  <h2 class="name"> Lamp </h2>
+			  <span class="price">$15.00</span>
 			  <a class="popup-btn">Quick View</a>
-			  <img src="images/1.jpg" class="product-img" alt="">
+			  <img src="images/Lamp.png" class="product-img" alt="">
 			</div>
 			<div class="popup-view">
 			  <div class="popup-card">
 				<a><i class="fas fa-times close-btn"></i></a>
 				<div class="product-img">
-				  <img src="images/1.jpg" alt="">
+				  <img src="images/Lamp.png" alt="">
 				</div>
 				<div class="info">
-				  <h2>Title<br><span>Subtitle</span></h2>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				  <span class="price">$100.00</span>
+				  <h2> Lamp Sprite <br><span> Made With Aseprite</span></h2>
+				  <p> Introducing a captivating 2D pixelated character that brings nostalgia and charm to life.
+					Meticulously crafted with intricate detailing and vibrant colors, capturing the essence of its design and personality.
+					Created by skilled artists, the pixelated character stands out with its unique attributes, igniting curiosity and sparking imagination. </p>
+				  <span class="price">$15.00</span>
 				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 				</div>
@@ -845,20 +907,22 @@
 		  </div>
 		  <div class="product">
 			<div class="product-card">
-			  <h2 class="name">Title6</h2>
-			  <span class="price">$250.00</span>
+			  <h2 class="name"> Table </h2>
+			  <span class="price">$15.00</span>
 			  <a class="popup-btn">Quick View</a>
-			  <img src="images/1.jpg" class="product-img" alt="">
+			  <img src="images/Table.png" class="product-img" alt="">
 			</div>
 			<div class="popup-view">
 			  <div class="popup-card">
 				<a><i class="fas fa-times close-btn"></i></a>
 				<div class="product-img">
-				  <img src="images/1.jpg" alt="">
+				  <img src="images/Table.png" alt="">
 				</div>
 				<div class="info">
-				  <h2>Title<br><span>Subtitle</span></h2>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				  <h2> Table Sprite <br><span> Made With Aseprite </span></h2>
+				  <p> Introducing a captivating 2D pixelated character that brings nostalgia and charm to life.
+					Meticulously crafted with intricate detailing and vibrant colors, capturing the essence of its design and personality.
+					Created by skilled artists, the pixelated character stands out with its unique attributes, igniting curiosity and sparking imagination. </p>
 				  <span class="price">$250.00</span>
 				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
@@ -876,21 +940,23 @@
 	<div class="container">
 		<div class="product">
 		  <div class="product-card">
-			<h2 class="name">Title1</h2>
-			<span class="price">$120.00</span>
+			<h2 class="name"> Elephant </h2>
+			<span class="price">$35.00</span>
 			<a class="popup-btn">Quick View</a>
-			<img src="images/1.jpg" class="product-img" alt="">
+			<img src="images/Elephant.png" class="product-img" alt="">
 		  </div>
 		  <div class="popup-view">
 			<div class="popup-card">
 			  <a><i class="fas fa-times close-btn"></i></a>
 			  <div class="product-img">
-				<img src="images/1.jpg" alt="">
+				<img src="images/Elephant.png" alt="">
 			  </div>
 			  <div class="info">
-				<h2>Title1<br><span>Subtitle1</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<span class="price">$120.00</span>
+				<h2> Elephant <br><span> Made in BlockBench </span></h2>
+				<p> Introducing an extraordinary 3D artwork created with Blockbench, pushing the boundaries of creativity and visual expression.
+					Meticulously crafted with attention to detail, showcasing the precision and skill of the creator in creating a realistic representation.
+					Made with high-quality materials, the artwork combines durability with intricate design, making it a captivating focal point in any setting. </p>
+				<span class="price">$35.00</span>
 				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 			  </div>
@@ -899,21 +965,23 @@
 		</div>
 		<div class="product">
 		  <div class="product-card">
-			<h2 class="name">Title2</h2>
-			<span class="price">$100.00</span>
+			<h2 class="name"> 3D BAT </h2>
+			<span class="price">$30.00</span>
 			<a class="popup-btn">Quick View</a>
-			<img src="images/1.jpg" class="product-img" alt="">
+			<img src="images/batfat.png" class="product-img" alt="">
 		  </div>
 		  <div class="popup-view">
 			<div class="popup-card">
 			  <a><i class="fas fa-times close-btn"></i></a>
 			  <div class="product-img">
-				<img src="images/1.jpg" alt="">
+				<img src="images/batfat.png" alt="">
 			  </div>
 			  <div class="info">
-				<h2>Title<br><span>Subtitle1</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<span class="price">$100.00</span>
+				<h2> Bat <br><span> Made With 3D </span></h2>
+				<p> Introducing an extraordinary 3D artwork created with Blockbench, pushing the boundaries of creativity and visual expression.
+					Meticulously crafted with attention to detail, showcasing the precision and skill of the creator in creating a realistic representation.
+					Made with high-quality materials, the artwork combines durability with intricate design, making it a captivating focal point in any setting. </p>
+				<span class="price">$30.00</span>
 				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
@@ -923,23 +991,24 @@
 		</div>
 		<div class="product">
 		  <div class="product-card">
-			<h2 class="name">Title3</h2>
-			<span class="price">$250.00</span>
+			<h2 class="name"> Shiba Inu </h2>
+			<span class="price">$29.99</span>
 			<a class="popup-btn">Quick View</a>
-			<img src="images/1.jpg" class="product-img" alt="">
+			<img src="images/shiba.png" class="product-img" alt="">
 		  </div>
 		  <div class="popup-view">
 			<div class="popup-card">
 			  <a><i class="fas fa-times close-btn"></i></a>
 			  <div class="product-img">
-				<img src="images/1.jpg" alt="">
+				<img src="images/shiba.png" alt="">
 			  </div>
 			  <div class="info">
-				<h2>Title<br><span>Subtitle</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<span class="price">$250.00</span>
+				<h2> Shiba Inu <br><span> Made with BlockBench </span></h2>
+				<p> Introducing an extraordinary 3D artwork created with Blockbench, pushing the boundaries of creativity and visual expression.
+					Meticulously crafted with attention to detail, showcasing the precision and skill of the creator in creating a realistic representation.
+					Made with high-quality materials, the artwork combines durability with intricate design, making it a captivating focal point in any setting. </p>
+				<span class="price">$29.99</span>
 				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
-
 
 			  </div>
 			</div>
@@ -947,21 +1016,23 @@
 		</div>
 		<div class="product">
 			<div class="product-card">
-			  <h2 class="name">Title4</h2>
-			  <span class="price">$120.00</span>
+			  <h2 class="name"> Koala </h2>
+			  <span class="price">$25.00</span>
 			  <a class="popup-btn">Quick View</a>
-			  <img src="images/1.jpg" class="product-img" alt="">
+			  <img src="images/koala.png" class="product-img" alt="">
 			</div>
 			<div class="popup-view">
 			  <div class="popup-card">
 				<a><i class="fas fa-times close-btn"></i></a>
 				<div class="product-img">
-				  <img src="images/1.jpg" alt="">
+				  <img src="images/koala.png" alt="">
 				</div>
 				<div class="info">
 				  <h2>Title<br><span>Subtitle</span></h2>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				  <span class="price">$120.00</span>
+				  <p> Introducing an extraordinary 3D artwork created with Blockbench, pushing the boundaries of creativity and visual expression.
+					Meticulously crafted with attention to detail, showcasing the precision and skill of the creator in creating a realistic representation.
+					Made with high-quality materials, the artwork combines durability with intricate design, making it a captivating focal point in any setting. </p>
+				  <span class="price">$25.00</span>
 				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 				</div>
@@ -970,20 +1041,22 @@
 		  </div>
 		  <div class="product">
 			<div class="product-card">
-			  <h2 class="name">Title5</h2>
-			  <span class="price">$100.00</span>
+			  <h2 class="name"> Chicken </h2>
+			  <span class="price">$20.00</span>
 			  <a class="popup-btn">Quick View</a>
-			  <img src="images/1.jpg" class="product-img" alt="">
+			  <img src="images/chicken.png" class="product-img" alt="">
 			</div>
 			<div class="popup-view">
 			  <div class="popup-card">
 				<a><i class="fas fa-times close-btn"></i></a>
 				<div class="product-img">
-				  <img src="images/1.jpg" alt="">
+				  <img src="images/chicken.png" alt="">
 				</div>
 				<div class="info">
-				  <h2>Title<br><span>Subtitle</span></h2>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				  <h2> Chicken <br><span> Made With BlockBench </span></h2>
+				  <p> Introducing an extraordinary 3D artwork created with Blockbench, pushing the boundaries of creativity and visual expression.
+					Meticulously crafted with attention to detail, showcasing the precision and skill of the creator in creating a realistic representation.
+					Made with high-quality materials, the artwork combines durability with intricate design, making it a captivating focal point in any setting. </p>
 				  <span class="price">$100.00</span>
 				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
@@ -993,21 +1066,23 @@
 		  </div>
 		  <div class="product">
 			<div class="product-card">
-			  <h2 class="name">Title6</h2>
-			  <span class="price">$250.00</span>
+			  <h2 class="name"> Parrot </h2>
+			  <span class="price">$15.00</span>
 			  <a class="popup-btn">Quick View</a>
-			  <img src="images/1.jpg" class="product-img" alt="">
+			  <img src="images/parrot.png" class="product-img" alt="">
 			</div>
 			<div class="popup-view">
 			  <div class="popup-card">
 				<a><i class="fas fa-times close-btn"></i></a>
 				<div class="product-img">
-				  <img src="images/1.jpg" alt="">
+				  <img src="images/parrot.png" alt="">
 				</div>
 				<div class="info">
-				  <h2>Title<br><span>Subtitle</span></h2>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				  <span class="price">$250.00</span>
+				  <h2> Parrot <br><span> Made With BlockBench </span></h2>
+				  <p> Introducing an extraordinary 3D artwork created with Blockbench, pushing the boundaries of creativity and visual expression.
+					Meticulously crafted with attention to detail, showcasing the precision and skill of the creator in creating a realistic representation.
+					Made with high-quality materials, the artwork combines durability with intricate design, making it a captivating focal point in any setting. </p>
+				  <span class="price">$15.00</span>
 				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 				</div>
 			  </div>
@@ -1022,21 +1097,23 @@
 	<div class="container">
 		<div class="product">
 		  <div class="product-card">
-			<h2 class="name">Title1</h2>
-			<span class="price">$120.00</span>
+			<h2 class="name"> PokeBalls Vending Machine </h2>
+			<span class="price">$75.00</span>
 			<a class="popup-btn">Quick View</a>
-			<img src="images/1.jpg" class="product-img" alt="">
+			<img src="images/machine.png" class="product-img" alt="">
 		  </div>
 		  <div class="popup-view">
 			<div class="popup-card">
 			  <a><i class="fas fa-times close-btn"></i></a>
 			  <div class="product-img">
-				<img src="images/1.jpg" alt="">
+				<img src="images/machine.png" alt="">
 			  </div>
 			  <div class="info">
-				<h2>Title1<br><span>Subtitle1</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<span class="price">$120.00</span>
+				<h2> PoekeBalls Vending Machine <br><span> Made With BlockBench</span></h2>
+				<p> Introducing an extraordinary 3D artwork created with Blockbench, pushing the boundaries of creativity and visual expression.
+					Meticulously crafted with attention to detail, showcasing the precision and skill of the creator in creating a realistic representation.
+					Made with high-quality materials, the artwork combines durability with intricate design, making it a captivating focal point in any setting. </p>
+				<span class="price">$75.00</span>
 				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
@@ -1046,21 +1123,23 @@
 		</div>
 		<div class="product">
 		  <div class="product-card">
-			<h2 class="name">Title2</h2>
-			<span class="price">$100.00</span>
+			<h2 class="name"> Neon Slot-Machine </h2>
+			<span class="price">$75.00</span>
 			<a class="popup-btn">Quick View</a>
-			<img src="images/1.jpg" class="product-img" alt="">
+			<img src="images/slotmachine.png" class="product-img" alt="">
 		  </div>
 		  <div class="popup-view">
 			<div class="popup-card">
 			  <a><i class="fas fa-times close-btn"></i></a>
 			  <div class="product-img">
-				<img src="images/1.jpg" alt="">
+				<img src="images/slotmachine.png" alt="">
 			  </div>
 			  <div class="info">
-				<h2>Title<br><span>Subtitle1</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<span class="price">$100.00</span>
+				<h2> Neon Slot-Machine <br><span> Made With BlockBench </span></h2>
+				<p> Introducing an extraordinary 3D artwork created with Blockbench, pushing the boundaries of creativity and visual expression.
+					Meticulously crafted with attention to detail, showcasing the precision and skill of the creator in creating a realistic representation.
+					Made with high-quality materials, the artwork combines durability with intricate design, making it a captivating focal point in any setting. </p>
+				<span class="price">$75.00</span>
 				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
@@ -1070,21 +1149,23 @@
 		</div>
 		<div class="product">
 		  <div class="product-card">
-			<h2 class="name">Title3</h2>
-			<span class="price">$250.00</span>
+			<h2 class="name">Snow Ball</h2>
+			<span class="price">$70.00</span>
 			<a class="popup-btn">Quick View</a>
-			<img src="images/1.jpg" class="product-img" alt="">
+			<img src="images/snowglobe.png" class="product-img" alt="">
 		  </div>
 		  <div class="popup-view">
 			<div class="popup-card">
 			  <a><i class="fas fa-times close-btn"></i></a>
 			  <div class="product-img">
-				<img src="images/1.jpg" alt="">
+				<img src="images/snowglobe.png" alt="">
 			  </div>
 			  <div class="info">
-				<h2>Title<br><span>Subtitle</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<span class="price">$250.00</span>
+				<h2> Snow Globe <br><span> Made With Block Bench </span></h2>
+				<p> Introducing an extraordinary 3D artwork created with Blockbench, pushing the boundaries of creativity and visual expression.
+					Meticulously crafted with attention to detail, showcasing the precision and skill of the creator in creating a realistic representation.
+					Made with high-quality materials, the artwork combines durability with intricate design, making it a captivating focal point in any setting. </p>
+				<span class="price">$60.00</span>
 				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
@@ -1165,26 +1246,29 @@
 	  </div>
 	  
 </section>
+<------vehicle------>
 
 <section id="vehicle" style="background: linear-gradient(to bottom, white, lightgreen); padding-top: 10px;">
 	<h2 class="section-title">Vehicle Artworks</h2>
 	<div class="container">
 		<div class="product">
 		  <div class="product-card">
-			<h2 class="name">Title1</h2>
-			<span class="price">$120.00</span>
+			<h2 class="name"> Einstein Scooter </h2>
+			<span class="price">$100.00</span>
 			<a class="popup-btn">Quick View</a>
-			<img src="images/1.jpg" class="product-img" alt="">
+			<img src="images/scooter.png" class="product-img" alt="">
 		  </div>
 		  <div class="popup-view">
 			<div class="popup-card">
 			  <a><i class="fas fa-times close-btn"></i></a>
 			  <div class="product-img">
-				<img src="images/1.jpg" alt="">
+				<img src="images/scooter.png" alt="">
 			  </div>
 			  <div class="info">
-				<h2>Title1<br><span>Subtitle1</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<h2> Einstein Scooter <br><span> Made With Block Bench </span></h2>
+				<p> Introducing an extraordinary 3D artwork created with Blockbench, pushing the boundaries of creativity and visual expression.
+					Meticulously crafted with attention to detail, showcasing the precision and skill of the creator in creating a realistic representation.
+					Made with high-quality materials, the artwork combines durability with intricate design, making it a captivating focal point in any setting. </p>
 				<span class="price">$120.00</span>
 				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
@@ -1195,20 +1279,22 @@
 		</div>
 		<div class="product">
 		  <div class="product-card">
-			<h2 class="name">Title2</h2>
+			<h2 class="name"> Police Car </h2>
 			<span class="price">$100.00</span>
 			<a class="popup-btn">Quick View</a>
-			<img src="images/1.jpg" class="product-img" alt="">
+			<img src="images/Police Car.png" class="product-img" alt="">
 		  </div>
 		  <div class="popup-view">
 			<div class="popup-card">
 			  <a><i class="fas fa-times close-btn"></i></a>
 			  <div class="product-img">
-				<img src="images/1.jpg" alt="">
+				<img src="images/Police Car.png" alt="">
 			  </div>
 			  <div class="info">
-				<h2>Title<br><span>Subtitle1</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<h2> Police Car <br><span> Made With Block Bench </span></h2>
+				<p> Introducing an extraordinary 3D artwork created with Blockbench, pushing the boundaries of creativity and visual expression.
+					Meticulously crafted with attention to detail, showcasing the precision and skill of the creator in creating a realistic representation.
+					Made with high-quality materials, the artwork combines durability with intricate design, making it a captivating focal point in any setting. </p>
 				<span class="price">$100.00</span>
 				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
@@ -1219,21 +1305,23 @@
 		</div>
 		<div class="product">
 		  <div class="product-card">
-			<h2 class="name">Title3</h2>
-			<span class="price">$250.00</span>
+			<h2 class="name"> Ferrari Car </h2>
+			<span class="price">$100.00</span>
 			<a class="popup-btn">Quick View</a>
-			<img src="images/1.jpg" class="product-img" alt="">
+			<img src="images/ferrari.png" class="product-img" alt="">
 		  </div>
 		  <div class="popup-view">
 			<div class="popup-card">
 			  <a><i class="fas fa-times close-btn"></i></a>
 			  <div class="product-img">
-				<img src="images/1.jpg" alt="">
+				<img src="images/ferrari.png" alt="">
 			  </div>
 			  <div class="info">
-				<h2>Title<br><span>Subtitle</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<span class="price">$250.00</span>
+				<h2> Ferrari Car <br><span> Made With BlockBench </span></h2>
+				<p> Introducing an extraordinary 3D artwork created with Blockbench, pushing the boundaries of creativity and visual expression.
+					Meticulously crafted with attention to detail, showcasing the precision and skill of the creator in creating a realistic representation.
+					Made with high-quality materials, the artwork combines durability with intricate design, making it a captivating focal point in any setting. </p>
+				<span class="price">$100.00</span>
 				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
@@ -1243,21 +1331,23 @@
 		</div>
 		<div class="product">
 			<div class="product-card">
-			  <h2 class="name">Title4</h2>
-			  <span class="price">$120.00</span>
+			  <h2 class="name"> Red Car </h2>
+			  <span class="price">$99.69</span>
 			  <a class="popup-btn">Quick View</a>
-			  <img src="images/1.jpg" class="product-img" alt="">
+			  <img src="images/Red Car.png" class="product-img" alt="">
 			</div>
 			<div class="popup-view">
 			  <div class="popup-card">
 				<a><i class="fas fa-times close-btn"></i></a>
 				<div class="product-img">
-				  <img src="images/1.jpg" alt="">
+				  <img src="images/Red Car.png" alt="">
 				</div>
 				<div class="info">
-				  <h2>Title<br><span>Subtitle</span></h2>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				  <span class="price">$120.00</span>
+				  <h2> Red Car <br><span> Made With BlockBench </span></h2>
+				  <p> Introducing an extraordinary 3D artwork created with Blockbench, pushing the boundaries of creativity and visual expression.
+					Meticulously crafted with attention to detail, showcasing the precision and skill of the creator in creating a realistic representation.
+					Made with high-quality materials, the artwork combines durability with intricate design, making it a captivating focal point in any setting. </p>
+				  <span class="price">$99.69</span>
 				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 				</div>
@@ -1266,20 +1356,22 @@
 		  </div>
 		  <div class="product">
 			<div class="product-card">
-			  <h2 class="name">Title5</h2>
-			  <span class="price">$100.00</span>
+			  <h2 class="name"> Blue Car </h2>
+			  <span class="price">$99.69</span>
 			  <a class="popup-btn">Quick View</a>
-			  <img src="images/1.jpg" class="product-img" alt="">
+			  <img src="images/Blue Car.png" class="product-img" alt="">
 			</div>
 			<div class="popup-view">
 			  <div class="popup-card">
 				<a><i class="fas fa-times close-btn"></i></a>
 				<div class="product-img">
-				  <img src="images/1.jpg" alt="">
+				  <img src="images/Blue Car.png" alt="">
 				</div>
 				<div class="info">
-				  <h2>Title<br><span>Subtitle</span></h2>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				  <h2> Blue Car <br><span> Made With BlockBench </span></h2>
+				  <p> Introducing an extraordinary 3D artwork created with Blockbench, pushing the boundaries of creativity and visual expression.
+					Meticulously crafted with attention to detail, showcasing the precision and skill of the creator in creating a realistic representation.
+					Made with high-quality materials, the artwork combines durability with intricate design, making it a captivating focal point in any setting. </p>
 				  <span class="price">$100.00</span>
 				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
@@ -1290,21 +1382,23 @@
 		  </div>
 		  <div class="product">
 			<div class="product-card">
-			  <h2 class="name">Title6</h2>
-			  <span class="price">$250.00</span>
+			  <h2 class="name"> Gray Car </h2>
+			  <span class="price">$99.69</span>
 			  <a class="popup-btn">Quick View</a>
-			  <img src="images/1.jpg" class="product-img" alt="">
+			  <img src="images/Gray car.png" class="product-img" alt="">
 			</div>
 			<div class="popup-view">
 			  <div class="popup-card">
 				<a><i class="fas fa-times close-btn"></i></a>
 				<div class="product-img">
-				  <img src="images/1.jpg" alt="">
+				  <img src="images/Gray car.png" alt="">
 				</div>
 				<div class="info">
-				  <h2>Title<br><span>Subtitle</span></h2>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				  <span class="price">$250.00</span>
+				  <h2> Gray Car <br><span> Made With BlockBench </span></h2>
+				  <p> Introducing an extraordinary 3D artwork created with Blockbench, pushing the boundaries of creativity and visual expression.
+					Meticulously crafted with attention to detail, showcasing the precision and skill of the creator in creating a realistic representation.
+					Made with high-quality materials, the artwork combines durability with intricate design, making it a captivating focal point in any setting. </p>
+				  <span class="price">$99.69</span>
 				  <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 				</div>
@@ -1320,20 +1414,22 @@
 	<div class="container">
 		<div class="product">
 		  <div class="product-card">
-			<h2 class="name">Title1</h2>
-			<span class="price">$120.00</span>
+			<h2 class="name"> Futuristic Bag</h2>
+			<span class="price">$21.00</span>
 			<a class="popup-btn">Quick View</a>
-			<img src="images/1.jpg" class="product-img" alt="">
+			<img src="images/future_bag.png" class="product-img" alt="">
 		  </div>
 		  <div class="popup-view">
 			<div class="popup-card">
 			  <a><i class="fas fa-times close-btn"></i></a>
 			  <div class="product-img">
-				<img src="images/1.jpg" alt="">
+				<img src="images/future_bag.png" alt="">
 			  </div>
 			  <div class="info">
-				<h2>Title1<br><span>Subtitle1</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<h2> Futuristic Bag <br><span> Made With BlockBench </span></h2>
+				<p> Introducing an extraordinary 3D artwork created with Blockbench, pushing the boundaries of creativity and visual expression.
+					Meticulously crafted with attention to detail, showcasing the precision and skill of the creator in creating a realistic representation.
+					Made with high-quality materials, the artwork combines durability with intricate design, making it a captivating focal point in any setting. </p>
 				<span class="price">$120.00</span>
 				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
@@ -1344,21 +1440,23 @@
 		</div>
 		<div class="product">
 		  <div class="product-card">
-			<h2 class="name">Title2</h2>
-			<span class="price">$100.00</span>
+			<h2 class="name"> Modern Bag </h2>
+			<span class="price">$20.00</span>
 			<a class="popup-btn">Quick View</a>
-			<img src="images/1.jpg" class="product-img" alt="">
+			<img src="images/modern.png" class="product-img" alt="">
 		  </div>
 		  <div class="popup-view">
 			<div class="popup-card">
 			  <a><i class="fas fa-times close-btn"></i></a>
 			  <div class="product-img">
-				<img src="images/1.jpg" alt="">
+				<img src="images/modern.png" alt="">
 			  </div>
 			  <div class="info">
-				<h2>Title<br><span>Subtitle1</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<span class="price">$100.00</span>
+				<h2> Modern Bag <br><span> Made With BlockBench </span></h2>
+				<p> Introducing an extraordinary 3D artwork created with Blockbench, pushing the boundaries of creativity and visual expression.
+					Meticulously crafted with attention to detail, showcasing the precision and skill of the creator in creating a realistic representation.
+					Made with high-quality materials, the artwork combines durability with intricate design, making it a captivating focal point in any setting. </p>
+				<span class="price">$20.00</span>
 				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
@@ -1368,21 +1466,23 @@
 		</div>
 		<div class="product">
 		  <div class="product-card">
-			<h2 class="name">Title3</h2>
-			<span class="price">$250.00</span>
+			<h2 class="name"> Leather BackPack </h2>
+			<span class="price">$18.88</span>
 			<a class="popup-btn">Quick View</a>
-			<img src="images/1.jpg" class="product-img" alt="">
+			<img src="images/leatherbackpack.png" class="product-img" alt="">
 		  </div>
 		  <div class="popup-view">
 			<div class="popup-card">
 			  <a><i class="fas fa-times close-btn"></i></a>
 			  <div class="product-img">
-				<img src="images/1.jpg" alt="">
+				<img src="images/leatherbackpack.png" alt="">
 			  </div>
 			  <div class="info">
-				<h2>Title<br><span>Subtitle</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<span class="price">$250.00</span>
+				<h2> Leather BackPack <br><span> Made With BlockBench </span></h2>
+				<p> Introducing an extraordinary 3D artwork created with Blockbench, pushing the boundaries of creativity and visual expression.
+					Meticulously crafted with attention to detail, showcasing the precision and skill of the creator in creating a realistic representation.
+					Made with high-quality materials, the artwork combines durability with intricate design, making it a captivating focal point in any setting. </p>
+				<span class="price">$18.88</span>
 				<a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-primary" id="add-cart-btn"><i class="fas fa-shopping-cart"></i> Add to cart</a>
 
 
@@ -1609,7 +1709,22 @@
 		  </div></div></div>
 		  
 <footer>
-		<p>&copy; 2023 Art Fusion. All rights reserved.</p>
+		<div class="footer-content">
+			<h3> Art Fusion </h3>
+			<p>The best location for your Artworks needs. We Sell pixelated, 2D and 3D!!!</p>
+			
+			<ul class="Socials">
+
+			<li><a href="#"><i class="fa-brands fa-square-facebook fa-xl" style="color: #3b5998;"></i></a></li>
+			<li><a href="#"><i class="fa-brands fa-square-instagram fa-xl" style="color: #d62976;"></i></a></li>
+			<li><a href="#"><i class="fa-brands fa-square-twitter fa-xl" style="color: #1DA1F2;"></i></i></a></li>
+			<li><a href="#"><i class="fa-brands fa-square-google-plus fa-xl" style="color: #db4a39;"></i></a></li>
+			<li><a href="#"><i class="fa-brands fa-square-youtube fa-xl" style="color: #fe0101;"></i></a></li>
+			</ul>
+		</div>
+		<div class="footer-bottom">
+            <p>Copyright &copy; 2019 <a href="http://www.nationalarchives.gov.uk">Nationalarchives</a></p>
+        </div>
 	</footer>
 </body>
 
