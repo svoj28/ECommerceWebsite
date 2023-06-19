@@ -705,73 +705,92 @@ margin: 1rem 0 3rem 0;
 	transition: 0.3s ease-in-out;
   }
   
-@media (max-width: 900px){
-  .product .popup-card{
-    flex-direction: column;
-    width: 550px;
-    height: auto;
-  }
-
-  .product .popup-card .product-img{
-    z-index: 3;
-    width: 100%;
-    height: 200px;
-    transform: translateY(0);
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-
-  .product .popup-card .product-img img{
-    left: initial;
-    max-width: 40%;
-  }
-
-  .product .popup-card .info{
-    width: 100%;
-    height: auto;
-    padding: 20px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-  }
-
-  .product .popup-card .info h2{
-    margin: 20px 5px 5px 5px;
-    font-size: 25px;
-  }
-
-  .product .popup-card .info h2 span{
-    font-size: 10px;
-  }
-
-  .product .popup-card .info p{
-    margin: 5px;
-    font-size: 13px;
-  }
-
-  .product .popup-card .info .price{
-    margin: 5px;
-    font-size: 30px;
-  }
-
-  .product .popup-card .info .add-cart-btn{
-    margin: 5px auto;
-    padding: 5px 40px;
-    font-size: 14px;
-  }
-
-  .product .popup-card .info .add-wish{
-    font-size: 14px;
-  }
-
-  .product .popup-card .close-btn{
-    z-index: 4;
-  }
-  .product{
-	margin-top: 100px;
-  }
+  @media only screen and (max-width: 900px) {
+	.product .popup-card {
+	  flex-direction: column;
+	  width: 550px;
+	  height: auto;
+	}
+  
+	.product .popup-card .product-img {
+	  z-index: 3;
+	  width: 100%;
+	  height: 200px;
+	  transform: translateY(0);
+	  border-bottom-left-radius: 0;
+	  border-top-left-radius: 10px;
+	  border-top-right-radius: 10px;
+	}
+  
+	.product .popup-card .product-img img {
+	  left: initial;
+	  max-width: 40%;
+	}
+  
+	.product .popup-card .info {
+	  width: 100%;
+	  height: auto;
+	  padding: 20px;
+	  border-top-left-radius: 0;
+	  border-top-right-radius: 0;
+	}
+  
+	.product .popup-card .info h2 {
+	  margin: 20px 5px 5px 5px;
+	  font-size: 25px;
+	}
+  
+	.product .popup-card .info h2 span {
+	  font-size: 10px;
+	}
+  
+	.product .popup-card .info p {
+	  margin: 5px;
+	  font-size: 13px;
+	}
+  
+	.product .popup-card .info .price {
+	  margin: 5px;
+	  font-size: 30px;
+	}
+  
+	.product .popup-card .info .add-cart-btn {
+	  margin: 5px auto;
+	  padding: 5px 40px;
+	  font-size: 14px;
+	}
+  
+	.product .popup-card .info .add-wish {
+	  font-size: 14px;
+	}
+  
+	.product .popup-card .close-btn {
+	  z-index: 4;
+	}
+  
+	.product {
+	  margin-top: 100px;
+	}
+	.wrapperzz{
+		display: grid !important;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 10px;
+	}
+	.wrapperzz .option {
+        background: #fff;
+        height: 100% !important;
+        width: 100% !important;
+        border-radius: 5px !important;
+        cursor: pointer;
+        padding: 0 12px;
+        border: 2px solid lightgrey;
+        transition: all 0.3s ease;
+	  }
+	  .popup {
+		margin-top: -125px;
+	  }
 }
-
+  
 
   h1{
 	text-align: center;
@@ -823,7 +842,7 @@ margin: 1rem 0 3rem 0;
     transition: transform .3s ease-out,-webkit-transform .3s ease-out,-o-transform .3s ease-out;
 }
 .modal-content {
-    position: fixed;
+	position: fixed;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid rgba(0,0,0,.2);
@@ -831,9 +850,9 @@ margin: 1rem 0 3rem 0;
     box-shadow: 0 3px 9px rgba(0,0,0,.5);
     outline: 0;
     height: auto;
-    width: 70%;
-    margin-left: 210px;
-    margin-top: 95px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
 }
 .modal-header {
 	padding-top: 28px;
@@ -1307,17 +1326,16 @@ transition: 0.3s ease-in-out;
   }
   
   .popup {
-    width: 635px;
-    height: 418px;
+    width: 85%;
+    height: 555px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #fff;
     padding: 20px;
     position: absolute;
-    top: 100%;
+    top: 487px;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 312px;
   }
   
   .payment-form {
@@ -1384,20 +1402,22 @@ transition: 0.3s ease-in-out;
   }
 
   .wrapperzz {
-	display: flex;
-    height: 100px;
-    width: 400px;
+    height: 194px;
+    width: 50%;
     justify-content: space-between;
     border-radius: 5px;
     padding: 20px 15px;
-    flex-direction: row;
+	display: flex;
+    align-items: center;
+    justify-items: center;
   }
   
   .wrapperzz .option {
 	background: #fff;
-	height: 100%;
-	width: 100%;
+	height: 50%;
+	width: 50%;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: space-evenly;
 	margin: 0 10px;
